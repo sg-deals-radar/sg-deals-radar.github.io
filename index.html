@@ -28,6 +28,12 @@
   @media(min-width:1060px){.wrap{max-width:1180px}}
 
   header{padding:28px 0 8px;text-align:center}
+  @media(max-width:560px){
+    header{padding:14px 0 2px}
+    .logo{font-size:20px}
+    .tag{display:none}
+    .search{padding:10px 0 8px}
+  }
   .logo{font-size:26px;font-weight:800;letter-spacing:-.5px;display:inline-flex;align-items:center;gap:9px}
   .logo .dot{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(45,212,191,.18);animation:pulse 2.4s infinite}
   @keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(45,212,191,.18)}50%{box-shadow:0 0 0 9px rgba(45,212,191,.03)}}
@@ -44,10 +50,9 @@
   .searchbox input{flex:1;background:none;border:0;color:var(--ink);font-size:16px;outline:none}
   .searchbox svg{flex:none;opacity:.6}
 
-  .tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
-  .tabs::-webkit-scrollbar{display:none}
+  .tabs{display:flex;flex-wrap:wrap;gap:7px;padding:2px 0 12px;justify-content:center}
   .tab{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);
-    padding:8px 15px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;transition:.15s}
+    padding:8px 14px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;transition:.15s}
   .tab .n{opacity:.55;font-weight:600;margin-left:5px}
   .tab.on{background:var(--accent);color:#04211d;border-color:transparent}
   .tab.on .n{opacity:.7}
@@ -60,7 +65,12 @@
   .sort{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:13px}
   .sort select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:13px}
 
-  .count{color:var(--muted);font-size:13px;padding:2px 2px 12px}
+  .countrow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:2px 2px 12px}
+  .count{color:var(--muted);font-size:13px}
+  .viewtoggle{display:flex;gap:2px;background:var(--card);border:1px solid var(--line);border-radius:9px;padding:2px;flex:none}
+  .vbtn{border:0;background:none;color:var(--muted);padding:5px 10px;border-radius:7px;font-size:15px;cursor:pointer;line-height:1;transition:.15s}
+  .vbtn.on{background:var(--accent);color:#04211d}
+  @media(min-width:720px){.viewtoggle{display:none}}  /* toggle only matters on mobile */
 
   .bankpicker{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin-bottom:14px}
   .bank-lead{font-size:14px;font-weight:700;margin-bottom:10px}
@@ -83,6 +93,16 @@
   .more:hover{color:var(--accent);border-color:var(--accent)}
   @media(min-width:720px){.grid{grid-template-columns:1fr 1fr;gap:10px}}
   @media(min-width:1060px){.grid{grid-template-columns:1fr 1fr 1fr}}
+  /* Grid view on mobile: 2 compact columns, header stacked so narrow cards read well */
+  @media(max-width:719px){
+    .grid.as-grid{grid-template-columns:1fr 1fr;gap:8px}
+    .grid.as-grid .rowhead{flex-direction:column;align-items:stretch;padding:10px 11px 9px 14px;gap:7px}
+    .grid.as-grid .rowside{flex-direction:row;justify-content:space-between;align-items:center;width:100%}
+    .grid.as-grid .title{font-size:13.5px}
+    .grid.as-grid .exp{font-size:11px}
+    .grid.as-grid .actions{flex-wrap:wrap}
+    .grid.as-grid .btn.go{flex:1 1 100%}
+  }
   .deal{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:0;box-shadow:var(--shadow);position:relative;overflow:hidden}
   .deal:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c,#2dd4bf)}
   .rowhead{display:flex;align-items:center;gap:10px;width:100%;padding:11px 13px 11px 16px;cursor:pointer;
@@ -165,7 +185,13 @@
     <div class="bank-chips" id="bankChips"></div>
   </div>
 
-  <div class="count" id="count"></div>
+  <div class="countrow">
+    <span class="count" id="count"></span>
+    <div class="viewtoggle" id="viewtoggle" role="group" aria-label="View style">
+      <button class="vbtn" data-view="list" title="List view" aria-label="List view">☰</button>
+      <button class="vbtn" data-view="grid" title="Grid view" aria-label="Grid view">▦</button>
+    </div>
+  </div>
   <div class="grid" id="grid"></div>
 
   <footer>
@@ -190,7 +216,7 @@ const CAT_COLOR = {dining:"var(--dining)",shopping:"var(--shopping)",activities:
 
 let DEALS = [];
 let state = { cat:"all", q:"", filters:new Set(), sort:"cat", showAll:new Set(),
-  myCards:new Set(loadCards()) };
+  myCards:new Set(loadCards()), view:(localStorage.getItem("sgdr_view")||"list") };
 const SECTION_CAP = 9;   // deals shown per category in the grouped view (3 rows on desktop)
 const TODAY = new Date(); TODAY.setHours(0,0,0,0);
 
@@ -323,7 +349,14 @@ function card(d){
   </article>`;
 }
 
+function applyView(){
+  document.getElementById("grid").classList.toggle("as-grid", state.view==="grid");
+  document.querySelectorAll("#viewtoggle .vbtn").forEach(b=>
+    b.classList.toggle("on", b.dataset.view===state.view));
+}
+
 function render(){
+  applyView();
   const list = sortDeals(DEALS.filter(match));
   const noun = list.length===1?" deal":" deals";
   let label = list.length + noun;
@@ -358,6 +391,12 @@ function render(){
 }
 
 // ---- events ----
+document.getElementById("viewtoggle").addEventListener("click",e=>{
+  const b = e.target.closest("[data-view]"); if(!b) return;
+  state.view = b.dataset.view;
+  try{ localStorage.setItem("sgdr_view", state.view); }catch(err){}
+  applyView();
+});
 document.getElementById("tabs").addEventListener("click",e=>{
   const b = e.target.closest(".tab"); if(!b) return;
   state.cat = b.dataset.c;
