@@ -195,6 +195,24 @@ function extractExpiry(text, today) {
   return best;
 }
 
+/** Pull a START date out of promo text when the deal begins later:
+ *  ranges "7-9 Aug" / "20 Jul - 3 Aug" → first date; "from/starts 7 Aug".
+ *  Returns YYYY-MM-DD or null (null = assume it's already active). */
+function extractStart(text, today) {
+  const t = text.toLowerCase().replace(/[–—]/g, "-");
+  let m;
+  // "7-9 aug [2026]" → first day of the range
+  m = t.match(new RegExp(`\\b(\\d{1,2})\\s*(?:-|to)\\s*\\d{1,2}\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
+  if (m) return toIso(m[1], m[2], m[3], today);
+  // "20 jul - 3 aug [2026]" → first date
+  m = t.match(new RegExp(`\\b(\\d{1,2})\\s+${MONTH_RE}\\.?\\s*(?:-|to)\\s*\\d{1,2}\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
+  if (m) return toIso(m[1], m[2], m[4], today);
+  // "from/starts/available from 7 aug [2026]"
+  m = t.match(new RegExp(`(?:from|starts?|starting|available from|w\\.?e\\.?f\\.?|valid from)\\s+(?:sun|mon|tue|wed|thu|fri|sat)?[a-z]*,?\\s*(\\d{1,2})(?:st|nd|rd|th)?\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
+  if (m) return toIso(m[1], m[2], m[3], today);
+  return null;
+}
+
 // ---- merchant extraction ---------------------------------------------------
 // Words that mean the "merchant" we extracted is really a label, not a brand.
 const GENERIC_MERCHANTS = new Set([
@@ -343,7 +361,7 @@ async function fetchRss(feed, today) {
       url: r.link,
       cards: extractCards(text, category),
       location: null,
-      starts: added,
+      starts: extractStart(text, today) || added,
       expires: extractExpiry(text, today),
       source: feed.source,
       added,
@@ -386,7 +404,7 @@ async function fetchDiveDeals(today) {
       url: r.link,
       cards: extractCards(r.title, category),
       location: null,
-      starts: added,
+      starts: extractStart(r.title, today) || added,
       expires: extractExpiry(r.title, today),
       source: "divedeals",
       added,
@@ -431,7 +449,7 @@ async function fetchTelegram(cfg, today) {
       url: linkM[1],
       cards: extractCards(text, category),
       location: null,
-      starts: posted.toISOString().slice(0, 10),
+      starts: extractStart(text, today) || posted.toISOString().slice(0, 10),
       expires: extractExpiry(text, today),
       source: `tg-${cfg.channel}`,
       added: posted.toISOString().slice(0, 10),
@@ -464,14 +482,23 @@ async function main() {
     }
   }
 
+  // Guard: a start date later than the end date is a mis-parse (e.g. a collection
+  // window mistaken for the deal start) — clamp so the deal reads as already active.
+  for (const d of collected) {
+    if (d.starts && d.expires && d.starts > d.expires) d.starts = d.added < d.expires ? d.added : d.expires;
+  }
+
   // Merge + dedupe by id, drop expired, drop stale no-expiry items.
   const byId = new Map();
   for (const d of collected) byId.set(d.id, d);
   const todayIso = today.toISOString().slice(0, 10);
   const staleCut = new Date(today - STALE_DAYS * 864e5).toISOString().slice(0, 10);
   const deals = dedupe([...byId.values()].filter((d) => {
-    if (d.expires) return d.expires >= todayIso;
-    return d.added >= staleCut;
+    if (d.expires) return d.expires >= todayIso;         // dated → keep until it ends
+    if (d.starts && d.starts > todayIso) return true;    // upcoming → keep until it begins
+    // active & undated → keep STALE_DAYS from when it started (or was posted)
+    const anchor = (d.starts && d.starts > d.added) ? d.starts : d.added;
+    return anchor >= staleCut;
   }));
 
   deals.sort((a, b) => (b.added < a.added ? -1 : 1));

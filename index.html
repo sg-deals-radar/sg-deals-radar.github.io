@@ -131,6 +131,7 @@
   .pill.free{background:rgba(52,211,153,.14);color:#5eead4;border-color:transparent;font-weight:700}
   .exp{font-size:12px;color:var(--muted)}
   .exp.soon{color:var(--danger);font-weight:700}
+  .exp.upcoming{color:#a5b4fc;font-weight:700}
   .actions{display:flex;gap:8px;margin-top:13px}
   .btn{flex:1;border:1px solid var(--line);background:var(--card2);color:var(--ink);
     padding:10px;border-radius:10px;font-size:14px;font-weight:650;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;transition:.15s}
@@ -220,6 +221,8 @@ let state = { cat:"all", q:"", filters:new Set(), sort:"cat", showAll:new Set(),
   myCards:new Set(loadCards()), view:(localStorage.getItem("sgdr_view")||"list") };
 const SECTION_CAP = 9;   // deals shown per category in the grouped view (3 rows on desktop)
 const TODAY = new Date(); TODAY.setHours(0,0,0,0);
+const TODAY_STR = TODAY.getFullYear()+"-"+String(TODAY.getMonth()+1).padStart(2,"0")+"-"+String(TODAY.getDate()).padStart(2,"0");
+function notStarted(d){ return d.starts && d.starts > TODAY_STR; }
 
 function loadCards(){
   try{ return JSON.parse(localStorage.getItem("sgdr_cards")||"[]"); }catch(e){ return []; }
@@ -305,6 +308,7 @@ function sortDeals(list){
 }
 
 function expLabel(d){
+  if(notStarted(d)) return "Starts " + new Date(d.starts+"T00:00").toLocaleDateString("en-SG",{day:"numeric",month:"short"});
   const n = daysLeft(d);
   if(n===Infinity){
     // no end date found (usually inside the linked post) — show freshness, not a fake "No expiry"
@@ -345,7 +349,7 @@ function card(d){
         <div class="title">${d.title}</div>
       </div>
       <div class="rowside">
-        <span class="exp ${soon?"soon":""}">${expLabel(d)}</span>
+        <span class="exp ${notStarted(d)?"upcoming":(soon?"soon":"")}">${expLabel(d)}</span>
         <span class="chev">▼</span>
       </div>
     </button>
