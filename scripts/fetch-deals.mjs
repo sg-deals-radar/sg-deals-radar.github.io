@@ -50,8 +50,10 @@ const TELEGRAM_CHANNELS = [
   // NOTE: @sgdeal is dormant since Oct 2025, @goodlobangpolice has no public t.me/s/ preview — do not re-add.
 ];
 
-// Items with no expiry are dropped once older than this (Telegram deals churn fast).
-const STALE_DAYS = 21;
+// Deals with no detected end date are dropped once older than this (they usually
+// carry the date inside the linked post; flash deals churn fast, so keep it tight).
+// Deals WITH a detected end date are unaffected — they live until they actually expire.
+const STALE_DAYS = 7;
 
 // ---- inference helpers -----------------------------------------------------
 const CATS = ["dining", "shopping", "activities", "travel", "finance"];
@@ -207,16 +209,20 @@ function extractMerchant(title, fallback) {
 
 /** Obvious non-deals: news posts, channel self-promo, dead deals, listicles. */
 function isNoise(title, url) {
-  const t = title.toLowerCase();
+  // strip leading emoji/flags/symbols/punctuation so ^-anchored checks are robust
+  const t = title.toLowerCase().replace(/^[^\p{L}\p{N}$]+/u, "");
   if (/\/news\//.test(url)) return true;           // SingPromos news section (COE, etc.)
   if (t.includes("telegram channel")) return true; // channel self-promo posts
   if (/\bexpired\b/.test(t)) return true;          // retitled dead deals, however marked
-  // editorial roundups: "10 Best Muffins…", "5 Must-try Hawker Dishes…"
-  if (/^\d+\s/.test(t) && /\b(best|must[- ]?try|top|things|places|ideas|guide|new)\b/.test(t)) return true;
+  // number-led roundups/listicles: "10 Best Muffins…", "10 National Day Restaurant Deals…"
+  if (/^\d+\s/.test(t) && /\b(best|must[- ]?try|top|things|places?|ideas|guide|new|deals?|promos?|promotions?|restaurants?|cafes?|eateries|buffets?|steamboats?|bars?|spots?)\b/.test(t)) return true;
   // channel housekeeping roundups: "Latest SG Ticketed Events & Activities"
   if (/^latest\b.*\b(events|activities|deals|promos)\b/.test(t)) return true;
-  // editorial / first-person reviews (not deals): "We visited & dined at…"
+  // first-person reviews (not deals): "We visited & dined at…"
   if (/^(we (visited|tried|dined|checked|headed|went|explored)|our (review|verdict|thoughts)|here'?s (our|what we))\b/.test(t)) return true;
+  // advertorials / guides / opening announcements with no actual offer
+  if (/\binvites you to\b|\bhere'?s how\b|\beverything you need to know\b|\b(your|a) guide to\b|\bwant to explore\b|\bthings to do\b|\bhidden gem\b|\bshopping spot\b|\bnew hangout\b/.test(t)) return true;
+  if (/^visiting\b/.test(t)) return true;
   return false;
 }
 

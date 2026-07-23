@@ -303,7 +303,16 @@ function sortDeals(list){
 
 function expLabel(d){
   const n = daysLeft(d);
-  if(n===Infinity) return "No expiry";
+  if(n===Infinity){
+    // no end date found (usually inside the linked post) — show freshness, not a fake "No expiry"
+    const a = d.added ? new Date(d.added) : null;
+    if(!a) return "Check link";
+    const days = Math.floor((TODAY - a)/864e5);
+    if(days<=0) return "Posted today";
+    if(days===1) return "Posted yesterday";
+    if(days<7) return `Posted ${days}d ago`;
+    return "Posted " + a.toLocaleDateString("en-SG",{day:"numeric",month:"short"});
+  }
   if(n<0) return "Expired";
   if(n===0) return "Ends today";
   if(n===1) return "Ends tomorrow";
