@@ -1,0 +1,4 @@
+# local dev config
+.claude/
+# os cruft
+.DS_Store

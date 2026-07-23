@@ -1,0 +1,34 @@
+name: Refresh deals
+
+on:
+  schedule:
+    - cron: "0 22 * * *"     # daily at 06:00 SGT (22:00 UTC prev day)
+  workflow_dispatch:         # on-demand run from the Actions tab
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Fetch & rebuild deals.json
+        run: node scripts/fetch-deals.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name  "deals-bot"
+          git config user.email "actions@github.com"
+          if ! git diff --quiet -- deals.json; then
+            git add deals.json
+            git commit -m "chore: refresh deals ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          else
+            echo "No changes."
+          fi

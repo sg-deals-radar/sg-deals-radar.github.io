@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SG Deals Radar — every deal in Singapore, one clean feed</title>
+<meta name="description" content="Promo codes, discounts, offers and freebies across Singapore — dining, shopping, activities and travel. Free, fast, no ads.">
+<style>
+  :root{
+    --bg:#0f1720; --bg2:#141f2b; --card:#1a2836; --card2:#1f303f;
+    --ink:#eaf2f8; --muted:#8fa6bb; --line:#26384a;
+    --accent:#2dd4bf; --accent2:#f5b544; --pink:#f472b6;
+    --dining:#f59e0b; --shopping:#38bdf8; --activities:#a78bfa; --travel:#34d399; --finance:#fbbf24; --cards:#818cf8;
+    --danger:#fb7185;
+    --r:16px; --shadow:0 8px 30px rgba(0,0,0,.35);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:radial-gradient(1200px 600px at 50% -10%,#173042 0%,var(--bg) 55%) fixed;
+    color:var(--ink);
+    font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding-bottom:env(safe-area-inset-bottom);
+  }
+  .wrap{max-width:760px;margin:0 auto;padding:0 16px 64px}
+  @media(min-width:720px){.wrap{max-width:1000px}}
+  @media(min-width:1060px){.wrap{max-width:1180px}}
+
+  header{padding:28px 0 8px;text-align:center}
+  .logo{font-size:26px;font-weight:800;letter-spacing:-.5px;display:inline-flex;align-items:center;gap:9px}
+  .logo .dot{width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(45,212,191,.18);animation:pulse 2.4s infinite}
+  @keyframes pulse{0%,100%{box-shadow:0 0 0 4px rgba(45,212,191,.18)}50%{box-shadow:0 0 0 9px rgba(45,212,191,.03)}}
+  .tag{color:var(--muted);font-size:13.5px;margin:6px 0 0}
+  .updated{color:var(--muted);font-size:12px;margin-top:4px;opacity:.8}
+  .refresh{background:none;border:1px solid var(--line);color:var(--muted);border-radius:50%;
+    width:24px;height:24px;font-size:13px;cursor:pointer;vertical-align:middle;margin-left:4px;line-height:1;transition:.15s}
+  .refresh:hover{color:var(--accent);border-color:var(--accent)}
+  .refresh.spinning{animation:spin .8s linear infinite;pointer-events:none}
+  @keyframes spin{to{transform:rotate(360deg)}}
+
+  .search{position:sticky;top:0;z-index:20;padding:14px 0 10px;background:linear-gradient(var(--bg) 70%,transparent);margin-top:8px}
+  .searchbox{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:12px 16px}
+  .searchbox input{flex:1;background:none;border:0;color:var(--ink);font-size:16px;outline:none}
+  .searchbox svg{flex:none;opacity:.6}
+
+  .tabs{display:flex;gap:8px;overflow-x:auto;padding:2px 0 12px;scrollbar-width:none}
+  .tabs::-webkit-scrollbar{display:none}
+  .tab{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);
+    padding:8px 15px;border-radius:999px;font-size:14px;font-weight:600;cursor:pointer;white-space:nowrap;transition:.15s}
+  .tab .n{opacity:.55;font-weight:600;margin-left:5px}
+  .tab.on{background:var(--accent);color:#04211d;border-color:transparent}
+  .tab.on .n{opacity:.7}
+
+  .filters{display:flex;gap:8px;flex-wrap:wrap;padding-bottom:14px}
+  .chip{border:1px solid var(--line);background:transparent;color:var(--muted);
+    padding:6px 12px;border-radius:999px;font-size:13px;cursor:pointer;transition:.15s}
+  .chip.on{color:var(--ink);border-color:var(--accent);background:rgba(45,212,191,.1)}
+  .spacer{flex:1}
+  .sort{display:flex;align-items:center;gap:6px;color:var(--muted);font-size:13px}
+  .sort select{background:var(--card);color:var(--ink);border:1px solid var(--line);border-radius:8px;padding:5px 8px;font-size:13px}
+
+  .count{color:var(--muted);font-size:13px;padding:2px 2px 12px}
+
+  .bankpicker{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:13px 14px;margin-bottom:14px}
+  .bank-lead{font-size:14px;font-weight:700;margin-bottom:10px}
+  .bank-hint{font-weight:500;color:var(--muted);font-size:12.5px}
+  .bank-chips{display:flex;flex-wrap:wrap;gap:7px;align-items:center}
+  .bchip{border:1px solid var(--line);background:transparent;color:var(--muted);
+    padding:6px 12px;border-radius:999px;font-size:13px;font-weight:600;cursor:pointer;transition:.15s}
+  .bchip.on{color:#0b1020;background:var(--cards);border-color:transparent}
+  .bchip.clear{color:var(--muted);border-style:dashed;margin-left:auto}
+  .bchip.clear:hover{color:var(--danger);border-color:var(--danger)}
+
+  .grid{display:grid;gap:8px;align-items:start}
+  .sechead{grid-column:1/-1;display:flex;align-items:center;gap:8px;margin:16px 0 2px;
+    font-weight:750;font-size:15px;letter-spacing:-.2px}
+  .sechead:first-child{margin-top:2px}
+  .sechead .dot{width:9px;height:9px;border-radius:50%;background:var(--c)}
+  .sechead .n{color:var(--muted);font-weight:600;font-size:13px}
+  .more{grid-column:1/-1;background:none;border:1px dashed var(--line);color:var(--muted);
+    border-radius:10px;padding:10px;font-size:13.5px;font-weight:650;cursor:pointer;transition:.15s}
+  .more:hover{color:var(--accent);border-color:var(--accent)}
+  @media(min-width:720px){.grid{grid-template-columns:1fr 1fr;gap:10px}}
+  @media(min-width:1060px){.grid{grid-template-columns:1fr 1fr 1fr}}
+  .deal{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:0;box-shadow:var(--shadow);position:relative;overflow:hidden}
+  .deal:before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--c,#2dd4bf)}
+  .rowhead{display:flex;align-items:center;gap:10px;width:100%;padding:11px 13px 11px 16px;cursor:pointer;
+    background:none;border:0;color:inherit;text-align:left;font:inherit}
+  .rowmain{flex:1;min-width:0}
+  .rowtop{display:flex;align-items:center;gap:7px;min-width:0}
+  .cat{font-size:10.5px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;color:var(--c);flex:none}
+  .merchant{font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .mini{flex:none;font-size:10px;font-weight:800;padding:1px 6px;border-radius:999px}
+  .mini.free{background:rgba(52,211,153,.16);color:#5eead4}
+  .mini.codeic{background:rgba(45,212,191,.12);color:var(--accent)}
+  .mini.cardic{background:rgba(129,140,248,.16);color:#a5b4fc}
+  .title{font-size:15px;font-weight:700;margin:3px 0 0;letter-spacing:-.1px;line-height:1.35;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .deal.open .title{-webkit-line-clamp:unset;font-size:16.5px}
+  .rowside{flex:none;display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+  .chev{color:var(--muted);font-size:11px;transition:transform .18s}
+  .deal.open .chev{transform:rotate(180deg)}
+  .detail{display:none;padding:0 16px 14px}
+  .deal.open .detail{display:block}
+  .blurb{color:var(--muted);font-size:14px;margin:4px 0 0}
+  .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px;align-items:center}
+  .pill{font-size:12px;padding:4px 9px;border-radius:999px;background:var(--card2);color:var(--ink);border:1px solid var(--line)}
+  .pill.card{border-color:rgba(245,181,68,.4);color:var(--accent2)}
+  .pill.loc{color:var(--muted)}
+  .pill.free{background:rgba(52,211,153,.14);color:#5eead4;border-color:transparent;font-weight:700}
+  .exp{font-size:12px;color:var(--muted)}
+  .exp.soon{color:var(--danger);font-weight:700}
+  .actions{display:flex;gap:8px;margin-top:13px}
+  .btn{flex:1;border:1px solid var(--line);background:var(--card2);color:var(--ink);
+    padding:10px;border-radius:10px;font-size:14px;font-weight:650;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:7px;text-decoration:none;transition:.15s}
+  .btn:active{transform:scale(.98)}
+  .btn.code{background:rgba(45,212,191,.12);border-color:rgba(45,212,191,.35);color:var(--accent);font-family:ui-monospace,Menlo,monospace;letter-spacing:.5px}
+  .btn.code.copied{background:var(--accent);color:#04211d}
+  .btn.go{background:var(--accent);color:#04211d;border-color:transparent}
+  .btn.shareBtn{flex:0 0 46px;font-size:17px}
+  .btn.shareBtn.copied{background:var(--accent);color:#04211d;font-size:12px}
+
+  .empty{text-align:center;color:var(--muted);padding:60px 20px}
+  .empty .big{font-size:40px;margin-bottom:8px}
+
+  footer{text-align:center;color:var(--muted);font-size:12px;padding:34px 10px 10px;line-height:1.7}
+  footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo"><span class="dot"></span>SG Deals Radar</div>
+    <p class="tag">Every promo, discount, freebie &amp; voucher in Singapore — one clean feed.</p>
+    <p class="updated"><span id="updated"></span> <button class="refresh" id="refreshBtn" title="Refresh deals" aria-label="Refresh deals">↻</button></p>
+  </header>
+
+  <div class="search">
+    <div class="searchbox">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="q" type="search" placeholder="Search deals, merchants, codes…" autocomplete="off">
+    </div>
+  </div>
+
+  <div class="tabs" id="tabs"></div>
+
+  <div class="filters" id="filters">
+    <button class="chip" data-f="freebie">Freebies</button>
+    <button class="chip" data-f="code">Has code</button>
+    <button class="chip" data-f="soon">Expiring soon</button>
+    <div class="spacer"></div>
+    <label class="sort">Sort
+      <select id="sort">
+        <option value="cat" selected>By category</option>
+        <option value="new">Newest</option>
+        <option value="soon">Expiring soon</option>
+        <option value="az">A–Z</option>
+      </select>
+    </label>
+  </div>
+
+  <div class="bankpicker" id="bankpicker" hidden>
+    <div class="bank-lead">Your cards <span class="bank-hint">— pick your banks to see only deals you qualify for</span></div>
+    <div class="bank-chips" id="bankChips"></div>
+  </div>
+
+  <div class="count" id="count"></div>
+  <div class="grid" id="grid"></div>
+
+  <footer>
+    Deals change fast — always check the merchant's page before you buy.<br>
+    Free &amp; ad-free.
+  </footer>
+</div>
+
+<script>
+const CATS = [
+  {k:"all", label:"All", icon:"✦"},
+  {k:"cards", label:"Card Promos", icon:"💳"},
+  {k:"dining", label:"Dining", icon:"🍜"},
+  {k:"shopping", label:"Shopping", icon:"🛍️"},
+  {k:"activities", label:"Activities", icon:"🎢"},
+  {k:"travel", label:"Travel", icon:"✈️"},
+  {k:"finance", label:"Finance", icon:"💰"},
+];
+// Banks/networks a user can own — order roughly by SG prevalence.
+const BANKS = ["DBS","POSB","OCBC","UOB","Citi","HSBC","Maybank","Standard Chartered","Amex","CIMB","Trust","Visa","Mastercard"];
+const CAT_COLOR = {dining:"var(--dining)",shopping:"var(--shopping)",activities:"var(--activities)",travel:"var(--travel)",finance:"var(--finance)",cards:"var(--cards)"};
+
+let DEALS = [];
+let state = { cat:"all", q:"", filters:new Set(), sort:"cat", showAll:new Set(),
+  myCards:new Set(loadCards()) };
+const SECTION_CAP = 9;   // deals shown per category in the grouped view (3 rows on desktop)
+const TODAY = new Date(); TODAY.setHours(0,0,0,0);
+
+function loadCards(){
+  try{ return JSON.parse(localStorage.getItem("sgdr_cards")||"[]"); }catch(e){ return []; }
+}
+function saveCards(){
+  try{ localStorage.setItem("sgdr_cards", JSON.stringify([...state.myCards])); }catch(e){}
+}
+
+// ---- load data ----
+async function load(){
+  const upd = document.getElementById("updated");
+  upd.textContent = "Loading…";
+  try{
+    const r = await fetch("deals.json?t=" + Date.now(), {cache:"no-store"});
+    if(!r.ok) throw 0;
+    const j = await r.json();
+    DEALS = j.deals || [];
+    const nSrc = j.sources ? Object.values(j.sources).filter(n=>n>0).length : 0;
+    upd.textContent =
+      "Updated " + new Date(j.updated).toLocaleString("en-SG",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})
+      + (nSrc ? ` · ${nSrc} sources` : "");
+  }catch(e){
+    upd.textContent = "Couldn't load the deals feed — tap ↻ to retry";
+  }
+  DEALS = DEALS.filter(d => !d.expires || new Date(d.expires) >= TODAY); // drop expired
+  buildTabs(); buildBankPicker(); render();
+}
+
+function daysLeft(d){
+  if(!d.expires) return Infinity;
+  return Math.ceil((new Date(d.expires) - TODAY)/864e5);
+}
+function isSoon(d){ const n = daysLeft(d); return n>=0 && n<=4; }
+
+function buildTabs(){
+  const counts = {all:DEALS.length, cards:DEALS.filter(d=>d.cards&&d.cards.length).length};
+  DEALS.forEach(d=>counts[d.category]=(counts[d.category]||0)+1);
+  document.getElementById("tabs").innerHTML = CATS.map(c=>
+    `<button class="tab ${c.k===state.cat?"on":""}" data-c="${c.k}">${c.icon} ${c.label}<span class="n">${counts[c.k]||0}</span></button>`
+  ).join("");
+}
+
+function buildBankPicker(){
+  const counts = {};
+  DEALS.forEach(d=>(d.cards||[]).forEach(x=>counts[x]=(counts[x]||0)+1));
+  const chips = BANKS.filter(b=>counts[b]).map(b=>
+    `<button class="bchip ${state.myCards.has(b)?"on":""}" data-bank="${b}">${b}<span class="n"> ${counts[b]}</span></button>`
+  ).join("");
+  const clear = state.myCards.size
+    ? `<button class="bchip clear" data-bank="__clear">Clear ✕</button>` : "";
+  document.getElementById("bankChips").innerHTML = chips + clear;
+}
+
+function match(d){
+  if(state.cat==="cards"){
+    if(!(d.cards&&d.cards.length)) return false;
+    if(state.myCards.size && !d.cards.some(c=>state.myCards.has(c))) return false;
+  }else if(state.cat!=="all" && d.category!==state.cat){
+    return false;
+  }
+  const f = state.filters;
+  if(f.has("freebie") && d.type!=="freebie") return false;
+  if(f.has("code") && !d.code) return false;
+  if(f.has("soon") && !isSoon(d)) return false;
+  if(f.has("card") && !(d.cards&&d.cards.length)) return false;
+  if(state.q){
+    const q = state.q.toLowerCase();
+    const hay = [d.title,d.merchant,d.blurb,d.code,d.location,(d.cards||[]).join(" ")].join(" ").toLowerCase();
+    if(!hay.includes(q)) return false;
+  }
+  return true;
+}
+
+function sortDeals(list){
+  const s = state.sort;
+  return list.slice().sort((a,b)=>{
+    if(s==="az") return a.title.localeCompare(b.title);
+    if(s==="soon") return daysLeft(a)-daysLeft(b);
+    return new Date(b.added)-new Date(a.added); // "new" and within-category order
+  });
+}
+
+function expLabel(d){
+  const n = daysLeft(d);
+  if(n===Infinity) return "No expiry";
+  if(n<0) return "Expired";
+  if(n===0) return "Ends today";
+  if(n===1) return "Ends tomorrow";
+  if(n<=4) return `${n} days left`;
+  return "Ends " + new Date(d.expires).toLocaleDateString("en-SG",{day:"numeric",month:"short"});
+}
+
+function card(d){
+  const c = CAT_COLOR[d.category]||"var(--accent)";
+  const soon = isSoon(d);
+  const cardsPills = (d.cards||[]).map(x=>`<span class="pill card">💳 ${x}</span>`).join("");
+  const loc = d.location ? `<span class="pill loc">📍 ${d.location}</span>` : "";
+  const free = d.type==="freebie" ? `<span class="mini free">FREE</span>` : "";
+  const codeIc = d.code ? `<span class="mini codeic">🎟</span>` : "";
+  const cardIc = (d.cards&&d.cards.length) ? `<span class="mini cardic">💳 ${d.cards.join("/")}</span>` : "";
+  const codeBtn = d.code
+    ? `<button class="btn code" data-copy="${d.code}">${d.code}</button>`
+    : "";
+  return `<article class="deal" style="--c:${c}" data-id="${d.id}">
+    <button class="rowhead" aria-expanded="false">
+      <div class="rowmain">
+        <div class="rowtop">
+          <span class="cat">${d.category}</span>
+          <span class="merchant">${d.merchant}</span>
+          ${free}${codeIc}${cardIc}
+        </div>
+        <div class="title">${d.title}</div>
+      </div>
+      <div class="rowside">
+        <span class="exp ${soon?"soon":""}">${expLabel(d)}</span>
+        <span class="chev">▼</span>
+      </div>
+    </button>
+    <div class="detail">
+      ${d.blurb?`<div class="blurb">${d.blurb}</div>`:""}
+      <div class="meta">${cardsPills}${loc}<span class="pill loc">via ${d.source}</span></div>
+      <div class="actions">
+        ${codeBtn}
+        <a class="btn go" href="${d.url}" target="_blank" rel="noopener">Get deal →</a>
+        <button class="btn shareBtn" data-share="${d.id}" title="Share this deal">↗</button>
+      </div>
+    </div>
+  </article>`;
+}
+
+function render(){
+  const list = sortDeals(DEALS.filter(match));
+  const noun = list.length===1?" deal":" deals";
+  let label = list.length + noun;
+  if(state.cat==="cards")
+    label += state.myCards.size ? ` for your ${[...state.myCards].join(", ")} card${state.myCards.size>1?"s":""}` : " with card offers";
+  else if(state.cat!=="all") label += ` in ${state.cat}`;
+  document.getElementById("count").textContent = label;
+  const grid = document.getElementById("grid");
+  if(!list.length){
+    const msg = state.cat==="cards" && state.myCards.size
+      ? "No current promos for those cards. Try adding more banks above."
+      : "No deals match. Try clearing a filter.";
+    grid.innerHTML = `<div class="empty"><div class="big">🔍</div>${msg}</div>`;
+    return;
+  }
+  // "By category" on the All tab → sections in tab order, newest-first inside each.
+  if(state.sort==="cat" && state.cat==="all"){
+    grid.innerHTML = CATS.filter(c=>c.k!=="all").map(c=>{
+      const sub = list.filter(d=>d.category===c.k);
+      if(!sub.length) return "";
+      const open = state.showAll.has(c.k);
+      const shown = open ? sub : sub.slice(0, SECTION_CAP);
+      const more = sub.length > SECTION_CAP
+        ? `<button class="more" data-more="${c.k}">${open ? "Show fewer ↑" : `Show all ${sub.length} ${c.label.toLowerCase()} ↓`}</button>`
+        : "";
+      return `<div class="sechead" data-sec="${c.k}" style="--c:${CAT_COLOR[c.k]}"><span class="dot"></span>${c.icon} ${c.label}<span class="n">${sub.length}</span></div>`
+        + shown.map(card).join("") + more;
+    }).join("");
+    return;
+  }
+  grid.innerHTML = list.map(card).join("");
+}
+
+// ---- events ----
+document.getElementById("tabs").addEventListener("click",e=>{
+  const b = e.target.closest(".tab"); if(!b) return;
+  state.cat = b.dataset.c;
+  document.getElementById("bankpicker").hidden = state.cat!=="cards";
+  buildTabs(); render();
+});
+document.getElementById("bankChips").addEventListener("click",e=>{
+  const b = e.target.closest("[data-bank]"); if(!b) return;
+  const bank = b.dataset.bank;
+  if(bank==="__clear") state.myCards.clear();
+  else state.myCards.has(bank) ? state.myCards.delete(bank) : state.myCards.add(bank);
+  saveCards(); buildBankPicker(); render();
+});
+document.getElementById("filters").addEventListener("click",e=>{
+  const b = e.target.closest(".chip"); if(!b) return;
+  const f = b.dataset.f;
+  if(state.filters.has(f)){state.filters.delete(f);b.classList.remove("on");}
+  else{state.filters.add(f);b.classList.add("on");}
+  render();
+});
+document.getElementById("q").addEventListener("input",e=>{state.q=e.target.value.trim();render();});
+document.getElementById("sort").addEventListener("change",e=>{state.sort=e.target.value;render();});
+document.getElementById("grid").addEventListener("click",e=>{
+  const b = e.target.closest("[data-copy]");
+  if(b){
+    navigator.clipboard?.writeText(b.dataset.copy);
+    const old = b.textContent;
+    b.textContent = "✓ Copied"; b.classList.add("copied");
+    setTimeout(()=>{b.textContent=old;b.classList.remove("copied");},1400);
+    return;
+  }
+  const more = e.target.closest("[data-more]");
+  if(more){
+    const k = more.dataset.more;
+    state.showAll.has(k) ? state.showAll.delete(k) : state.showAll.add(k);
+    render();
+    if(!state.showAll.has(k))  // collapsed → jump back to the section top
+      document.querySelector(`.sechead[data-sec="${k}"]`)?.scrollIntoView({block:"start"});
+    return;
+  }
+  const sh = e.target.closest("[data-share]");
+  if(sh){
+    const d = DEALS.find(x=>x.id===sh.dataset.share);
+    if(!d) return;
+    // share the deal's DIRECT link (merchant/source page), never this site
+    const bits = [d.title];
+    if(d.code) bits.push(`Code: ${d.code}`);
+    if(d.expires) bits.push(`Ends ${new Date(d.expires).toLocaleDateString("en-SG",{day:"numeric",month:"short"})}`);
+    const text = bits.join(" · ");
+    if(navigator.share){
+      navigator.share({title:d.title, text, url:d.url}).catch(()=>{});
+    }else{
+      navigator.clipboard?.writeText(`${text}\n${d.url}`);
+      sh.textContent = "✓ Copied"; sh.classList.add("copied");
+      setTimeout(()=>{sh.textContent="↗";sh.classList.remove("copied");},1400);
+    }
+    return;
+  }
+  if(e.target.closest("a")) return;            // let links navigate
+  const head = e.target.closest(".rowhead");
+  if(head){
+    const deal = head.closest(".deal");
+    const open = deal.classList.toggle("open");
+    head.setAttribute("aria-expanded", open);
+  }
+});
+document.getElementById("refreshBtn").addEventListener("click", async e=>{
+  const b = e.currentTarget;
+  b.classList.add("spinning");
+  await load();                      // re-pull the latest published deals.json
+  setTimeout(()=>b.classList.remove("spinning"), 400);
+});
+
+load();
+</script>
+</body>
+</html>
