@@ -1,5 +1,7 @@
 # SG Deals Radar
 
+**Live: https://waffledolfi.github.io/sg-deals-radar/**
+
 Every promo code, discount, offer and freebie in Singapore — one clean, ad-free feed.
 Dining · Shopping · Activities · Travel · Finance · Card Promos.
 
