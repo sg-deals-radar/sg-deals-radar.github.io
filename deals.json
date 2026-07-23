@@ -1,7 +1,7 @@
 {
-  "updated": "2026-07-23T15:03:00.396Z",
+  "updated": "2026-07-23T22:57:36.206Z",
   "sources": {
-    "singpromos": 14,
+    "singpromos": 13,
     "moneydigest": 5,
     "milelion": 2,
     "suitesmile": 8,
@@ -2029,22 +2029,6 @@
       "source": "singpromos",
       "added": "2026-07-21",
       "blurb": "Save on domains, hosting, email, SSL and more with limited-time online offers. [ Read more at SINGPROMOS.COM ]"
-    },
-    {
-      "id": "singpromos-3m-summer-sale-with-up-to-97-off-on-scotch-brite-command-mor",
-      "title": "3M Summer Sale with Up to 97% Off on Scotch-Brite, Command & more from 21 – 23 Jul 2026",
-      "merchant": "singpromos",
-      "category": "shopping",
-      "type": "discount",
-      "code": null,
-      "url": "https://singpromos.com/warehouse-sales/3m-summer-sale-with-up-to-97-off-on-scotch-brite-command-more-from-21-23-jul-2026-304584/",
-      "cards": [],
-      "location": null,
-      "starts": "2026-07-21",
-      "expires": "2026-07-23",
-      "source": "singpromos",
-      "added": "2026-07-21",
-      "blurb": "Discounts on popular 3M household essentials [ Read more at SINGPROMOS.COM ]"
     },
     {
       "id": "singpromos-f-n-magnolia-marks-singapore-s-61st-birthday-with-exclusive-",
