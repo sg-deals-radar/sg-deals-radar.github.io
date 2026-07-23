@@ -47,6 +47,11 @@ GitHub Actions (cron, daily)             index.html  (GitHub Pages)
 | @freebiessg | Telegram preview | Freebies & giveaways |
 | @sgweekend | Telegram preview | Events, workshops, discounted activity tickets |
 | @sgconcerts | Telegram preview | Concerts & gigs (incl. free shows) |
+| @tastesoulsg | Telegram preview | Dining flash deals |
+| @goodlobang | Telegram preview | Food + freebies |
+| @good2gosg | Telegram preview | Events, pop-ups, free entries |
+| @confirmgood | Telegram preview | Mixed deals/events (review posts filtered out) |
+| @kiasufoodies | Telegram preview | Dining flash deals |
 | DiveDeals | Published feed.xml (advertised in their robots.txt) | Biggest single source — F&B, retail, experiences; last-14-days window |
 
 Dormant/rejected: @sgdeal (dead since Oct 2025), SethLui/TheSmartLocal/Honeycombers/CityNomads

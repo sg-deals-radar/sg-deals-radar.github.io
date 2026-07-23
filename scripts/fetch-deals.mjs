@@ -42,7 +42,12 @@ const TELEGRAM_CHANNELS = [
   { channel: "freebiessg",         category: "infer",      type: "freebie" },
   { channel: "sgweekend",          category: "infer:activities", type: "infer" }, // events + discounted tickets
   { channel: "sgconcerts",         category: "infer:activities", type: "infer" }, // concert/gig announcements
-  // NOTE: @sgdeal is dormant since Oct 2025 — do not re-add without checking freshness.
+  { channel: "tastesoulsg",        category: "dining",     type: "infer" },
+  { channel: "goodlobang",         category: "infer",      type: "infer" },
+  { channel: "good2gosg",          category: "infer:activities", type: "infer" }, // events + pop-ups
+  { channel: "confirmgood",        category: "infer",      type: "infer" }, // mixed; review posts filtered by isNoise
+  { channel: "kiasufoodies",       category: "dining",     type: "infer" },
+  // NOTE: @sgdeal is dormant since Oct 2025, @goodlobangpolice has no public t.me/s/ preview — do not re-add.
 ];
 
 // Items with no expiry are dropped once older than this (Telegram deals churn fast).
@@ -210,6 +215,8 @@ function isNoise(title, url) {
   if (/^\d+\s/.test(t) && /\b(best|must[- ]?try|top|things|places|ideas|guide|new)\b/.test(t)) return true;
   // channel housekeeping roundups: "Latest SG Ticketed Events & Activities"
   if (/^latest\b.*\b(events|activities|deals|promos)\b/.test(t)) return true;
+  // editorial / first-person reviews (not deals): "We visited & dined at…"
+  if (/^(we (visited|tried|dined|checked|headed|went|explored)|our (review|verdict|thoughts)|here'?s (our|what we))\b/.test(t)) return true;
   return false;
 }
 
@@ -375,7 +382,8 @@ async function fetchTelegram(cfg, today) {
     ).replace(/[ \t]+/g, " ").trim();
     if (!text || text.length < 12) continue;
     const lines = text.split("\n").map((l) => l.trim()).filter(Boolean);
-    const title = lines[0].replace(/^[\s\p{Extended_Pictographic}☀-➿]+|[\s\p{Extended_Pictographic}☀-➿]+$/gu, "").trim() || lines[0];
+    let title = lines[0].replace(/^[\s\p{Extended_Pictographic}☀-➿]+|[\s\p{Extended_Pictographic}☀-➿]+$/gu, "").trim() || lines[0];
+    title = title.replace(/^\[[^\]]{1,15}\]\s*/, "").trim() || title; // drop [New]/[Pop-Ups] tag prefixes
     if (isNoise(title, linkM[1])) continue;
     const posted = timeM ? new Date(timeM[1]) : today;
     // skip ancient posts that linger in the preview
@@ -384,7 +392,7 @@ async function fetchTelegram(cfg, today) {
     out.push({
       id: `tg-${cfg.channel}-${slug(linkM[1].split("/").pop() + "-" + title)}`,
       title: title.slice(0, 110),
-      merchant: extractMerchant(title, cfg.channel),
+      merchant: extractMerchant(title, ""),   // blank (not channel name) when no clear brand
       category,
       type: cfg.type === "infer" ? inferType(text) : cfg.type,
       code: extractCode(text),
