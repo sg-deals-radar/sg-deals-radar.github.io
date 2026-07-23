@@ -46,7 +46,6 @@ GitHub Actions (cron, daily)             index.html  (GitHub Pages)
 | @sgdealsandfreebies | Telegram preview | General deals & freebies |
 | @freebiessg | Telegram preview | Freebies & giveaways |
 | @sgweekend | Telegram preview | Events, workshops, discounted activity tickets |
-| @sgconcerts | Telegram preview | Concerts & gigs (incl. free shows) |
 | @tastesoulsg | Telegram preview | Dining flash deals |
 | @goodlobang | Telegram preview | Food + freebies |
 | @good2gosg | Telegram preview | Events, pop-ups, free entries |

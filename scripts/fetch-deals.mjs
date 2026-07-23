@@ -41,13 +41,13 @@ const TELEGRAM_CHANNELS = [
   { channel: "sgdealsandfreebies", category: "infer",      type: "infer" },
   { channel: "freebiessg",         category: "infer",      type: "freebie" },
   { channel: "sgweekend",          category: "infer:activities", type: "infer" }, // events + discounted tickets
-  { channel: "sgconcerts",         category: "infer:activities", type: "infer" }, // concert/gig announcements
   { channel: "tastesoulsg",        category: "dining",     type: "infer" },
   { channel: "goodlobang",         category: "infer",      type: "infer" },
   { channel: "good2gosg",          category: "infer:activities", type: "infer" }, // events + pop-ups
   { channel: "confirmgood",        category: "infer",      type: "infer" }, // mixed; review posts filtered by isNoise
   { channel: "kiasufoodies",       category: "dining",     type: "infer" },
-  // NOTE: @sgdeal is dormant since Oct 2025, @goodlobangpolice has no public t.me/s/ preview — do not re-add.
+  // NOTE: @sgdeal is dormant since Oct 2025, @goodlobangpolice has no public t.me/s/ preview,
+  // @sgconcerts removed by user preference (no concerts) — do not re-add these.
 ];
 
 // Deals with no detected end date are dropped once older than this (they usually
@@ -144,29 +144,55 @@ function toIso(day, monKey, year, today) {
   const mon = MONTHS[monKey.slice(0, 4) === "sept" ? "sept" : monKey.slice(0, 3)];
   let y = year ? Number(year) : today.getFullYear();
   let d = new Date(Date.UTC(y, mon, Number(day)));
-  // no explicit year and the date reads >2 weeks in the past → assume next year
-  if (!year && d < new Date(today.getTime() - 14 * 864e5)) d = new Date(Date.UTC(y + 1, mon, Number(day)));
+  // no explicit year and the date is many months past → genuine year-crossing
+  // (e.g. a December post citing a January deadline). A recently-past date is
+  // just expired — leave it in the past so the deal is dropped, not revived.
+  if (!year && d < new Date(today.getTime() - 150 * 864e5)) d = new Date(Date.UTC(y + 1, mon, Number(day)));
   return d.toISOString().slice(0, 10);
 }
 
-/** Pull an end date out of promo text: "until 26 July 2026", "till 27 Jul",
- *  "22-24 Jul", "from 20 to 26 July", "ends 5 Aug". Returns YYYY-MM-DD or null. */
+/** Pull an END date out of promo text. Confidence order:
+ *  explicit "until/till/ends X" > ranges "7-9 Aug" > "this August" >
+ *  bare FUTURE dates ("17 Aug 2026", "on 24 Jul") not preceded by a start-word.
+ *  Returns YYYY-MM-DD or null. */
 function extractExpiry(text, today) {
   const t = text.toLowerCase().replace(/[–—]/g, "-");
+  const todayIso = today.toISOString().slice(0, 10);
   let m;
-  // "until/till/by/ends [on] 26 july [2026]"
-  m = t.match(new RegExp(`(?:until|till|by|ends?(?:\\s+on)?|last\\s+day)\\s+(?:sun|mon|tue|wed|thu|fri|sat)?[a-z]*,?\\s*(\\d{1,2})(?:st|nd|rd|th)?\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
+  // 1) explicit end markers (highest confidence — a past date here = genuinely expired)
+  m = t.match(new RegExp(`(?:until|till|by|ends?(?:\\s+on)?|last\\s+day|valid\\s+(?:till|until|thru|through))\\s+(?:sun|mon|tue|wed|thu|fri|sat)?[a-z]*,?\\s*(\\d{1,2})(?:st|nd|rd|th)?\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
   if (m) return toIso(m[1], m[2], m[3], today);
-  // "until july 26[, 2026]" (month-first)
-  m = t.match(new RegExp(`(?:until|till|by|ends?(?:\\s+on)?)\\s+${MONTH_RE}\\.?\\s+(\\d{1,2})(?:st|nd|rd|th)?\\,?\\s*(\\d{4})?`));
+  m = t.match(new RegExp(`(?:until|till|by|ends?(?:\\s+on)?|valid\\s+(?:till|until))\\s+${MONTH_RE}\\.?\\s+(\\d{1,2})(?:st|nd|rd|th)?\\,?\\s*(\\d{4})?`));
   if (m) return toIso(m[2], m[1], m[3], today);
-  // "22-24 jul" / "from 20 to 26 july [2026]" → take the later day
-  m = t.match(new RegExp(`(\\d{1,2})\\s*(?:-|to)\\s*(\\d{1,2})\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
+  // 2) ranges "22-24 jul", "20 jul - 3 aug" → later date
+  m = t.match(new RegExp(`\\b(\\d{1,2})\\s*(?:-|to)\\s*(\\d{1,2})\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
   if (m) return toIso(m[2], m[3], m[4], today);
-  // "20 july - 26 july" / "20 jul to 3 aug" → take the second date
-  m = t.match(new RegExp(`\\d{1,2}\\s+${MONTH_RE}\\.?\\s*(?:-|to)\\s*(\\d{1,2})\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
+  m = t.match(new RegExp(`\\b\\d{1,2}\\s+${MONTH_RE}\\.?\\s*(?:-|to)\\s*(\\d{1,2})\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
   if (m) return toIso(m[2], m[3], m[4], today);
-  return null;
+  // 3) "this/end of/throughout August" → last day of that month
+  m = t.match(new RegExp(`(?:this|end of|throughout|through)\\s+${MONTH_RE}`));
+  if (m) {
+    const mon = MONTHS[m[1].slice(0, 4) === "sept" ? "sept" : m[1].slice(0, 3)];
+    let end = new Date(Date.UTC(today.getFullYear(), mon + 1, 0));
+    if (end.toISOString().slice(0, 10) < todayIso) end = new Date(Date.UTC(today.getFullYear() + 1, mon + 1, 0));
+    return end.toISOString().slice(0, 10);
+  }
+  // 4) bare FUTURE dates not preceded by a start-word → latest one is the deadline
+  const START = /\b(from|since|starts?|starting|available from|launch(?:ing|es)?|opening|opens?|w\.?e\.?f\.?|valid from|fr\.?)\s*$/;
+  let best = null, mm;
+  const reDM = new RegExp(`\\b(\\d{1,2})(?:st|nd|rd|th)?\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`, "g");
+  while ((mm = reDM.exec(t))) {
+    if (START.test(t.slice(Math.max(0, mm.index - 18), mm.index))) continue;
+    const iso = toIso(mm[1], mm[2], mm[3], today);
+    if (iso >= todayIso && (!best || iso > best)) best = iso;
+  }
+  const reMD = new RegExp(`${MONTH_RE}\\.?\\s+(\\d{1,2})(?!\\d)(?:st|nd|rd|th)?\\,?\\s*(\\d{4})?`, "g");
+  while ((mm = reMD.exec(t))) {
+    if (START.test(t.slice(Math.max(0, mm.index - 18), mm.index))) continue;
+    const iso = toIso(mm[2], mm[1], mm[3], today);
+    if (iso >= todayIso && (!best || iso > best)) best = iso;
+  }
+  return best;
 }
 
 // ---- merchant extraction ---------------------------------------------------
