@@ -166,6 +166,7 @@
   <div class="tabs" id="tabs"></div>
 
   <div class="filters" id="filters">
+    <button class="chip" data-f="today">🆕 New today</button>
     <button class="chip" data-f="freebie">Freebies</button>
     <button class="chip" data-f="code">Has code</button>
     <button class="chip" data-f="soon">Expiring soon</button>
@@ -252,6 +253,7 @@ function daysLeft(d){
   return Math.ceil((new Date(d.expires) - TODAY)/864e5);
 }
 function isSoon(d){ const n = daysLeft(d); return n>=0 && n<=4; }
+function postedDaysAgo(d){ return d.added ? Math.floor((TODAY - new Date(d.added))/864e5) : Infinity; }
 
 function buildTabs(){
   const counts = {all:DEALS.length, cards:DEALS.filter(d=>d.cards&&d.cards.length).length};
@@ -280,6 +282,7 @@ function match(d){
     return false;
   }
   const f = state.filters;
+  if(f.has("today") && postedDaysAgo(d)>0) return false;
   if(f.has("freebie") && d.type!=="freebie") return false;
   if(f.has("code") && !d.code) return false;
   if(f.has("soon") && !isSoon(d)) return false;
