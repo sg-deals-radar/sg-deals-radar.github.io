@@ -301,6 +301,10 @@ function match(d){
 function sortDeals(list){
   const s = state.sort;
   return list.slice().sort((a,b)=>{
+    // active-now deals always rank above upcoming ("Starts X") ones
+    const au = notStarted(a)?1:0, bu = notStarted(b)?1:0;
+    if(au!==bu) return au-bu;
+    if(au===1) return a.starts.localeCompare(b.starts); // among upcoming: soonest to start first
     if(s==="az") return a.title.localeCompare(b.title);
     if(s==="soon") return daysLeft(a)-daysLeft(b);
     return new Date(b.added)-new Date(a.added); // "new" and within-category order
