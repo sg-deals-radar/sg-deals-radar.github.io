@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T01:27:55.932Z",
+  "updated": "2026-07-24T01:44:14.541Z",
   "sources": {
     "singpromos": 13,
     "moneydigest": 4,
@@ -33,7 +33,8 @@
       "expires": "2026-08-16",
       "source": "divedeals",
       "added": "2026-08-15",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-museum-of-ice-cream-singapore-nation-day-deal-get-free-admis",
@@ -49,7 +50,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-09",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-21-on-rajah-this-national-day-get-50-off-lunch-dinner",
@@ -65,7 +67,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-09",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-pizza-maru-national-day-special-enjoy-up-to-61-off",
@@ -81,7 +84,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-08",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-tanyu-redeem-free-exclusive-limited-merchandise",
@@ -97,7 +101,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-07",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-yimanfen-sg61-enjoy-special-dessert-at-1-99",
@@ -113,7 +118,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-07",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-wa-en-wagyu-yakiniku-sg61-enjoy-free-flow-half-pint-beers-25",
@@ -129,7 +135,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-07",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-guzman-y-gomez-sg61-special-butther-chicken-mini-6-10",
@@ -145,7 +152,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-07",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-omma-korean-charcoal-bbq-dress-in-red-and-white-and-enjoy-61",
@@ -161,7 +169,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-05",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-the-singapore-edition-lobby-bar-sg61-event-summer-afternoon-",
@@ -177,7 +186,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-05",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-natureland-sg61-wellness-special-at-61",
@@ -193,7 +203,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-03",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-suki-suki-thai-hot-pot-sg61-get-premium-dinner-buffet-for-tw",
@@ -209,7 +220,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-03",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-sushi-tei-sg61-special-menu-starts-6-10",
@@ -225,7 +237,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-03",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-qin-restaurant-bar-sg61-special-menu-at-61",
@@ -241,7 +254,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-03",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-pizza-maru-try-new-menu-special-this-august-13-90",
@@ -257,7 +271,8 @@
       "expires": "2026-08-31",
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-jg-fit-pte-ltd-25-off-personal-training-trial",
@@ -273,7 +288,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-bbyeol-pwp-buy-water-purifier-get-the-helio-610",
@@ -289,7 +305,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-ruhens-sg-national-day-buy-purifiers-free-monosink",
@@ -305,7 +322,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-natureland-celebrate-sg61-with-bonus-61-cash-voucher",
@@ -321,7 +339,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-the-singapore-edition-lobby-bar-lobby-bar-national-day-pastr",
@@ -337,7 +356,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-sip-sip-national-day-specials-menu-set-at-61",
@@ -353,7 +373,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-bangkok-jam-sg61-enjoy-red-ruby-dessert-at-6-10",
@@ -369,7 +390,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-sarai-sg61-enjoy-3-course-thai-set-menu-at-61",
@@ -385,7 +407,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-barossa-sg61-special-6-10-with-purchase-main-course",
@@ -401,7 +424,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-suki-ya-sg61-enjoy-a5-kagoshima-wagyu-at-just-1-88",
@@ -417,7 +441,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-sg-skills-training-sg61-building-beyond-screen",
@@ -433,7 +458,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-08-01",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-beautyfresh-summer-warehouse-sale-up-to-80-off",
@@ -449,7 +475,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-30",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-paris-baguette-get-2-korean-mochi-donuts-for-2",
@@ -465,7 +492,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-30",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-shake-shake-in-a-tub-get-huge-fries-at-7-70-free-matcha-latt",
@@ -481,7 +509,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-29",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-the-singapore-edition-lobby-bar-celebrate-sg61-with-disco-br",
@@ -497,7 +526,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-29",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-dian-xiao-er-sg61-members-get-61-off-on-dd-duck-merch",
@@ -513,7 +543,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-29",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-eat-pizza-enjoy-50-off-the-2nd-pizza",
@@ -529,7 +560,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-28",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-dian-xiao-er-national-day-special-menu-starts-15-90",
@@ -545,7 +577,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-28",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-pizza-hut-get-national-day-bundle-at-61",
@@ -561,7 +594,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-27",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-georges-enjoy-1-for-1-drinks-wines-beers",
@@ -577,7 +611,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-27",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-tiong-bahru-hainanese-chicken-rice-celebrate-sg61-with-61-sh",
@@ -593,7 +628,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-27",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-hi-coffee-enjoy-50-off-total-bill",
@@ -609,7 +645,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-27",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-a-one-claypot-house-enjoy-30-off-all-food-items",
@@ -625,7 +662,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-27",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-tsui-wah-enjoy-national-day-spcial-menu-at-15-80",
@@ -641,7 +679,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-27",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-yeah-gelato-enjoy-buy-1-get-1-free-at-plaza-singapura",
@@ -657,7 +696,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-26",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-singtel-switch-to-sg-s-1-broadband-from-29-90-mth",
@@ -673,7 +713,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-25",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-eat-pizza-enjoy-a-korean-spicy-or-hawaiian-at-2-99",
@@ -689,7 +730,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-25",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-yes-lemon-buy-1-get-1-free-signature-punched-series",
@@ -705,7 +747,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-25",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "milelion-milelion-weekly-deal-summary-18-24-jul-26",
@@ -721,7 +764,8 @@
       "expires": "2026-07-24",
       "source": "milelion",
       "added": "2026-07-24",
-      "blurb": "All the deals from the world of miles and points [18-24 Jul 26]."
+      "blurb": "All the deals from the world of miles and points [18-24 Jul 26].",
+      "seenOn": 1
     },
     {
       "id": "divedeals-papi-s-tacos-enjoy-all-shaken-margaritas-for-just-11",
@@ -737,7 +781,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-24",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-smooy-singapore-enjoy-a-1-for-1-celebratory-treat",
@@ -753,7 +798,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-24",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-wogi-wogi-payday-deals",
@@ -769,7 +815,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-24",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "moneydigest-best-denki-warehouse-stock-clearance-has-up-to-90-off-tvs-la",
@@ -785,7 +832,8 @@
       "expires": "2026-07-26",
       "source": "moneydigest",
       "added": "2026-07-23",
-      "blurb": "Looking to score unbeatable bargains on electronics? BEST is back with another massive Warehouse Stock Clearance, offering up to 90% off a huge selection of TVs, laptops, smartphones, home appliances,"
+      "blurb": "Looking to score unbeatable bargains on electronics? BEST is back with another massive Warehouse Stock Clearance, offering up to 90% off a huge selection of TVs, laptops, smartphones, home appliances,",
+      "seenOn": 1
     },
     {
       "id": "tg-sgfooddeals-4846-soup-restaurant-50-off-samsui-bottled-sauce",
@@ -801,7 +849,8 @@
       "expires": "2026-09-30",
       "source": "tg-sgfooddeals",
       "added": "2026-07-23",
-      "blurb": "🔹 Enjoy 50% off signature Samsui sauces to pair with your homecooked meals · 🔹 Choose from Ginger Sauce, Sambal Sauce & XO Sauce · 📅 Now till 30 Sep · 📍 All outlets · More info: tco.sg/IcnUHmfVx ·"
+      "blurb": "🔹 Enjoy 50% off signature Samsui sauces to pair with your homecooked meals · 🔹 Choose from Ginger Sauce, Sambal Sauce & XO Sauce · 📅 Now till 30 Sep · 📍 All outlets · More info: tco.sg/IcnUHmfVx ·",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5144-1300-free-jett-bbq-smoked-beef-cheek-tacos-no-purchase-",
@@ -812,12 +861,13 @@
       "code": null,
       "url": "https://t.me/sgdealsandfreebies/5144",
       "cards": [],
-      "location": null,
+      "location": "Jett Barbecue, Siloso Beach, Store 31",
       "starts": "2026-07-24",
       "expires": "2026-08-16",
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-23",
-      "blurb": "✨ Jett BBQ is giving away 1,300 FREE smoked beef cheek tacos at Sentosa GrillFest · ✨ 100 FREE smoked beef cheek tacos available per day, first come, first served. Limited to 1 per person per day. · \ud83d"
+      "blurb": "✨ Jett BBQ is giving away 1,300 FREE smoked beef cheek tacos at Sentosa GrillFest · ✨ 100 FREE smoked beef cheek tacos available per day, first come, first served. Limited to 1 per person per day. · \ud83d",
+      "seenOn": 1
     },
     {
       "id": "tg-freebiessg-1152-freebie-laura-mercier-mint-setting-powder",
@@ -833,7 +883,8 @@
       "expires": "2026-07-26",
       "source": "tg-freebiessg",
       "added": "2026-07-23",
-      "blurb": "🔸 Redeem a free sample of the new Laura Mercier Mint Translucent Setting Powder · 🔸 A loose powder to instantly correct redness & clinically proven to improve skin barrier · 🔸 While stocks last, li"
+      "blurb": "🔸 Redeem a free sample of the new Laura Mercier Mint Translucent Setting Powder · 🔸 A loose powder to instantly correct redness & clinically proven to improve skin barrier · 🔸 While stocks last, li",
+      "seenOn": 1
     },
     {
       "id": "tg-sgweekend-3732-free-family-fun-at-acm-adventures-dreamscapes",
@@ -844,12 +895,13 @@
       "code": null,
       "url": "https://t.me/sgweekend/3732",
       "cards": [],
-      "location": null,
+      "location": "Asian Civilisations Museum",
       "starts": "2026-07-23",
       "expires": "2026-07-26",
       "source": "tg-sgweekend",
       "added": "2026-07-23",
-      "blurb": "✨ Step into a world where dreams come to life with free programmes for all · ✨ Join a musical adventure in the galleries for little ones · ✨ Dance & imagine together through whimsical worlds in an int"
+      "blurb": "✨ Step into a world where dreams come to life with free programmes for all · ✨ Join a musical adventure in the galleries for little ones · ✨ Dance & imagine together through whimsical worlds in an int",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-2015-free-entry-to-sg-s-largest-outdoor-fair",
@@ -860,12 +912,13 @@
       "code": null,
       "url": "https://t.me/good2gosg/2015",
       "cards": [],
-      "location": null,
+      "location": "Suntec Convention Centre Hall 404",
       "starts": "2026-08-15",
       "expires": "2026-08-16",
       "source": "tg-good2gosg",
       "added": "2026-07-23",
-      "blurb": "➡️ Biggest outdoor fair returns ft. 40+ exhibitors & 80+ leading outdoor & sports brands · ➡️ Interactive experiences incl. free pilates classes, guided trail run, product demos & more · 📆 15 - 16 Au"
+      "blurb": "➡️ Biggest outdoor fair returns ft. 40+ exhibitors & 80+ leading outdoor & sports brands · ➡️ Interactive experiences incl. free pilates classes, guided trail run, product demos & more · 📆 15 - 16 Au",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-2016-free-entry-to-35a-market",
@@ -876,12 +929,13 @@
       "code": null,
       "url": "https://t.me/good2gosg/2016",
       "cards": [],
-      "location": null,
+      "location": "35A Kampong Bahru",
       "starts": "2026-07-23",
       "expires": "2026-07-26",
       "source": "tg-good2gosg",
       "added": "2026-07-23",
-      "blurb": "➡️ Curated fashion, art, wine, music, bakes & more · ➡️ + live DJs from 5 - 9pm · 📆 26 Jul · 🕣 1 - 9pm · 📍 35A Kampong Bahru · 👉 More info: bit.ly/4fudqjD · @good2gosg #places2go #things2do"
+      "blurb": "➡️ Curated fashion, art, wine, music, bakes & more · ➡️ + live DJs from 5 - 9pm · 📆 26 Jul · 🕣 1 - 9pm · 📍 35A Kampong Bahru · 👉 More info: bit.ly/4fudqjD · @good2gosg #places2go #things2do",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4374-sm-oy",
@@ -897,7 +951,8 @@
       "expires": "2026-07-24",
       "source": "tg-tastesoulsg",
       "added": "2026-07-23",
-      "blurb": "➡️ 1-for-1 Classic Cup · 📆 24 Jul · 📍 All mall outlets · ❗️ T&Cs apply. · 👉 More info: bit.ly/3RPSZpq · @tastesoulsg"
+      "blurb": "➡️ 1-for-1 Classic Cup · 📆 24 Jul · 📍 All mall outlets · ❗️ T&Cs apply. · 👉 More info: bit.ly/3RPSZpq · @tastesoulsg",
+      "seenOn": 3
     },
     {
       "id": "tg-goodlobang-4587-poke-theory",
@@ -913,7 +968,8 @@
       "expires": "2026-07-26",
       "source": "tg-goodlobang",
       "added": "2026-07-23",
-      "blurb": "➡️ $10 Regular Poke Bowls (U.P. $14.90) · 📅 24 - 26 Jul · 📍 All outlets · 👉 More info: bit.ly/4fj5ItK · @goodlobang"
+      "blurb": "➡️ $10 Regular Poke Bowls (U.P. $14.90) · 📅 24 - 26 Jul · 📍 All outlets · 👉 More info: bit.ly/4fj5ItK · @goodlobang",
+      "seenOn": 1
     },
     {
       "id": "suitesmile-scoot-dbs-promo-code-20-off-jul-2026",
@@ -931,7 +987,8 @@
       "expires": "2026-07-27",
       "source": "suitesmile",
       "added": "2026-07-23",
-      "blurb": "From 23 to 27 Jul 2026, get a 20% discount off Scoot fares with a DBS promo code. Travel from Aug 2026 to Jan 2027."
+      "blurb": "From 23 to 27 Jul 2026, get a 20% discount off Scoot fares with a DBS promo code. Travel from Aug 2026 to Jan 2027.",
+      "seenOn": 1
     },
     {
       "id": "singpromos-kleenex-s-pore-spend-s-25-get-free-plushie-keychain-blind-bo",
@@ -947,7 +1004,8 @@
       "expires": "2026-09-15",
       "source": "singpromos",
       "added": "2026-07-23",
-      "blurb": "Bring home an adorable Everyday Softie plushie with a qualifying Kleenex purchase [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Bring home an adorable Everyday Softie plushie with a qualifying Kleenex purchase [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "singpromos-fairprice-50-off-andersen-s-of-denmark-ice-cream-more-for-li",
@@ -963,7 +1021,8 @@
       "expires": "2026-07-29",
       "source": "singpromos",
       "added": "2026-07-23",
-      "blurb": "Half-price savings on selected groceries, seafood, fruit and ice cream [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Half-price savings on selected groceries, seafood, fruit and ice cream [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "singpromos-sm-oy-singapore-1-for-1-classic-cup-on-24-july-2026",
@@ -979,7 +1038,8 @@
       "expires": "2026-07-24",
       "source": "singpromos",
       "added": "2026-07-23",
-      "blurb": "Celebrate with a refreshing 1-for-1 Classic Cup deal [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Celebrate with a refreshing 1-for-1 Classic Cup deal [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "singpromos-scoot-x-dbs-posb-enjoy-20-off-flights-to-over-40-destination",
@@ -998,7 +1058,8 @@
       "expires": "2026-07-27",
       "source": "singpromos",
       "added": "2026-07-23",
-      "blurb": "Save 20% on selected Scoot fares [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Save 20% on selected Scoot fares [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "singpromos-giant-s-pore-3-for-25-ben-jerry-s-38-off-ka-and-more-weekly-",
@@ -1014,7 +1075,8 @@
       "expires": "2026-07-29",
       "source": "singpromos",
       "added": "2026-07-23",
-      "blurb": "Stock up on grocery bargains [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Stock up on grocery bargains [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "tg-confirmgood-3926-planning-to-have-fun-in-singapore-or-go-on-a-day-trip-t",
@@ -1030,7 +1092,8 @@
       "expires": "2026-07-26",
       "source": "tg-confirmgood",
       "added": "2026-07-23",
-      "blurb": "🍜 Read more: bit.ly/4sFB4hR · @confirmgood"
+      "blurb": "🍜 Read more: bit.ly/4sFB4hR · @confirmgood",
+      "seenOn": 1
     },
     {
       "id": "moneydigest-nutrisoy-launches-new-matcha-latte-flavoured-fresh-soya-milk",
@@ -1046,7 +1109,8 @@
       "expires": null,
       "source": "moneydigest",
       "added": "2026-07-23",
-      "blurb": "Ask us questions, discover the latest offers & more on Telegram. Calling all matcha lovers! If you can’t get enough of the earthy, aromatic taste of matcha, there’s a new drink you’ll want to add to y"
+      "blurb": "Ask us questions, discover the latest offers & more on Telegram. Calling all matcha lovers! If you can’t get enough of the earthy, aromatic taste of matcha, there’s a new drink you’ll want to add to y",
+      "seenOn": 1
     },
     {
       "id": "moneydigest-this-woodlands-showroom-is-bringing-malaysia-direct-prices-t",
@@ -1062,7 +1126,8 @@
       "expires": null,
       "source": "moneydigest",
       "added": "2026-07-23",
-      "blurb": "Why cross the Causeway for cheaper furniture when the deals are already in Woodlands? Highly-raved furniture retailer, Ecozy Furniture Gallery, is celebrating National Day with a major furniture sale "
+      "blurb": "Why cross the Causeway for cheaper furniture when the deals are already in Woodlands? Highly-raved furniture retailer, Ecozy Furniture Gallery, is celebrating National Day with a major furniture sale ",
+      "seenOn": 1
     },
     {
       "id": "moneydigest-chagee-s-adorable-bes-tea-brew-crew-plushies-are-finally-her",
@@ -1078,7 +1143,8 @@
       "expires": null,
       "source": "moneydigest",
       "added": "2026-07-23",
-      "blurb": "Tea time just got a whole lot cuter! If you’ve been eyeing CHAGEE’s irresistibly fluffy Bes-Tea Brew Crew plushies, the wait is finally over. Inspired by the different “personali-teas” that make every"
+      "blurb": "Tea time just got a whole lot cuter! If you’ve been eyeing CHAGEE’s irresistibly fluffy Bes-Tea Brew Crew plushies, the wait is finally over. Inspired by the different “personali-teas” that make every",
+      "seenOn": 1
     },
     {
       "id": "eatbook-mos-burger-launches-7-90-teochew-braised-duck-burger-for-nat",
@@ -1094,7 +1160,8 @@
       "expires": null,
       "source": "eatbook",
       "added": "2026-07-23",
-      "blurb": "MOS Burger has launched the Teochew Braised Duck Burger for National Day 2026, priced from $7.90. Enjoy it while you can! The post MOS Burger Launches $7.90 Teochew Braised Duck Burger For National Da"
+      "blurb": "MOS Burger has launched the Teochew Braised Duck Burger for National Day 2026, priced from $7.90. Enjoy it while you can! The post MOS Burger Launches $7.90 Teochew Braised Duck Burger For National Da",
+      "seenOn": 1
     },
     {
       "id": "eatbook-chocolat-n-spice-review-fresh-muffins-from-2-20-by-ex-hotel-",
@@ -1110,7 +1177,8 @@
       "expires": null,
       "source": "eatbook",
       "added": "2026-07-23",
-      "blurb": "Chocolat N' Spice is a popular hawker bakery in Shunfu Mart by an ex-hotel pastry chef. You can get fresh muffins in 20 flavours, from $2.20! The post Chocolat N Spice Review: Fresh Muffins From $2.20"
+      "blurb": "Chocolat N' Spice is a popular hawker bakery in Shunfu Mart by an ex-hotel pastry chef. You can get fresh muffins in 20 flavours, from $2.20! The post Chocolat N Spice Review: Fresh Muffins From $2.20",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4375-mos-burger",
@@ -1126,7 +1194,8 @@
       "expires": null,
       "source": "tg-tastesoulsg",
       "added": "2026-07-23",
-      "blurb": "➡️ $10 for 2 Deluxe Mushroom Wagyu Burgers · 📆 Every Mon & Tue · 📍 All outlets · ❗️ Available for dine-in, takeaway & mobile ordering. While stocks last. T&Cs apply. · 👉 More info: bit.ly/4fQsnOc ·"
+      "blurb": "➡️ $10 for 2 Deluxe Mushroom Wagyu Burgers · 📆 Every Mon & Tue · 📍 All outlets · ❗️ Available for dine-in, takeaway & mobile ordering. While stocks last. T&Cs apply. · 👉 More info: bit.ly/4fQsnOc ·",
+      "seenOn": 2
     },
     {
       "id": "tg-sgdealsandfreebies-5146-free-canon-plushie",
@@ -1142,7 +1211,8 @@
       "expires": null,
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-23",
-      "blurb": "There’s a cute Canon pop-up at Guoco Tower where you can get a FREE plushie! 🥰 · Find out more: https://www.instagram.com/reel/DbIJI-XPESI · @sgdealsandfreebies"
+      "blurb": "There’s a cute Canon pop-up at Guoco Tower where you can get a FREE plushie! 🥰 · Find out more: https://www.instagram.com/reel/DbIJI-XPESI · @sgdealsandfreebies",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5148-exclusive-follower-price",
@@ -1158,7 +1228,8 @@
       "expires": null,
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-23",
-      "blurb": "Medicube Collagen Firming Sun Cream at 67% OFF for just $8.82! · Grab yours: · https://s.lazada.sg/s.5FHxF?c=p&t=p-i3jBRcE-sOqYmmM · @sgdealsandfreebies"
+      "blurb": "Medicube Collagen Firming Sun Cream at 67% OFF for just $8.82! · Grab yours: · https://s.lazada.sg/s.5FHxF?c=p&t=p-i3jBRcE-sOqYmmM · @sgdealsandfreebies",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5145-free-cat-litter-on-shopee",
@@ -1174,7 +1245,8 @@
       "expires": null,
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-23",
-      "blurb": "✨Simply join the store’s membership to claim yours! · 👉🏻Join here: · https://s.shopee.sg/8zxpKL4SqB · @sgdealsandfreebies"
+      "blurb": "✨Simply join the store’s membership to claim yours! · 👉🏻Join here: · https://s.shopee.sg/8zxpKL4SqB · @sgdealsandfreebies",
+      "seenOn": 1
     },
     {
       "id": "tg-confirmgood-3925-wondering-where-to-buy-premium-black-pork-in-singapore-",
@@ -1190,7 +1262,8 @@
       "expires": null,
       "source": "tg-confirmgood",
       "added": "2026-07-23",
-      "blurb": "🇰🇷 Read more: bit.ly/44EaiwD · @confirmgood"
+      "blurb": "🇰🇷 Read more: bit.ly/44EaiwD · @confirmgood",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4376-celebrate-national-day-2026-with-an-sg61-menu-featuring",
@@ -1206,7 +1279,8 @@
       "expires": null,
       "source": "tg-tastesoulsg",
       "added": "2026-07-23",
-      "blurb": "🧇 Read more: bit.ly/4fsd391 · @tastesoulsg"
+      "blurb": "🧇 Read more: bit.ly/4fsd391 · @tastesoulsg",
+      "seenOn": 2
     },
     {
       "id": "tg-confirmgood-3924-discover-park-side-a-new-all-day-cafe-at-singapore-bota",
@@ -1222,7 +1296,8 @@
       "expires": null,
       "source": "tg-confirmgood",
       "added": "2026-07-23",
-      "blurb": "🌳 Read more: bit.ly/4gRpPk2 · @confirmgood"
+      "blurb": "🌳 Read more: bit.ly/4gRpPk2 · @confirmgood",
+      "seenOn": 1
     },
     {
       "id": "divedeals-chapanda-enjoy-20-off-on-peach-series",
@@ -1238,7 +1313,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-famous-amos-grab-2-big-bags-of-cookies-for-only-18-90",
@@ -1254,7 +1330,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-bhg-enjoy-10-off-selected-colours-of-ekozou",
@@ -1270,7 +1347,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-og-singapore-enjoy-20-off-storewide",
@@ -1286,7 +1364,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-fore-coffee-fore-us-get-2-treats-from-9-50",
@@ -1302,7 +1381,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-watsons-get-30-off-all-skincare",
@@ -1318,7 +1398,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-cheers-save-up-to-56-off-on-your-favourite-treats",
@@ -1334,7 +1415,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-burnt-ends-enjoy-20-off-cold-brew-coffee",
@@ -1350,7 +1432,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-true-chiropractic-sports-chiropractic-from-50",
@@ -1366,7 +1449,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-true-chiropractic-start-your-health-journey-at-just-38",
@@ -1382,7 +1466,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-orchid-live-seafood-sg61-tank-to-table-feast-just-61",
@@ -1398,7 +1483,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-takashimaya-department-store-biggest-payday-sale-up-to-300-o",
@@ -1414,7 +1500,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-23",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5140-free-irvins-keychain-irvins-x-nissin-tasting-at-fairpri",
@@ -1425,12 +1512,13 @@
       "code": null,
       "url": "https://t.me/sgdealsandfreebies/5140",
       "cards": [],
-      "location": null,
+      "location": "FairPrice L1 Atrium, VivoCity",
       "starts": "2026-07-22",
       "expires": "2026-08-16",
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-22",
-      "blurb": "✨Play a simple game to get a FREE IRVINS embroidered keychain · ✨Try FREE samples of IRVINS X NISSIN noodles daily from 12PM to 2PM, while stocks last · ✨Buy 1 x IRVINS Salted Egg Tomato Fish Skin + 2"
+      "blurb": "✨Play a simple game to get a FREE IRVINS embroidered keychain · ✨Try FREE samples of IRVINS X NISSIN noodles daily from 12PM to 2PM, while stocks last · ✨Buy 1 x IRVINS Salted Egg Tomato Fish Skin + 2",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5142-free-fore-coffee-matcha-butter-salt-cream-drink",
@@ -1441,12 +1529,13 @@
       "code": "3F2455",
       "url": "https://t.me/sgdealsandfreebies/5142",
       "cards": [],
-      "location": null,
+      "location": "Jurong Point, Bugis Junction, The Centrepoin",
       "starts": "2026-07-23",
       "expires": "2026-07-31",
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-22",
-      "blurb": "✨ Fore Coffee is giving away 250 FREE Matcha Butter Salt Cream drinks! Simply approach a barista to receive a unique code and redeem your free drink via the Fore App. · ✨ Limited to one free drink per"
+      "blurb": "✨ Fore Coffee is giving away 250 FREE Matcha Butter Salt Cream drinks! Simply approach a barista to receive a unique code and redeem your free drink via the Fore App. · ✨ Limited to one free drink per",
+      "seenOn": 2
     },
     {
       "id": "tg-sgweekend-3729-save-up-to-s-120-off-singapore-airlines-flights-to-with",
@@ -1464,7 +1553,8 @@
       "expires": "2027-05-31",
       "source": "tg-sgweekend",
       "added": "2026-07-22",
-      "blurb": "✨ Enjoy up to S$120 on Singapore Airlines flights every last Tuesday of the month · ✨ Fly to Europe, Japan, Korea & other Singapore Airlines destinations (excluding Southeast Asia destinations) · ✨ Us"
+      "blurb": "✨ Enjoy up to S$120 on Singapore Airlines flights every last Tuesday of the month · ✨ Fly to Europe, Japan, Korea & other Singapore Airlines destinations (excluding Southeast Asia destinations) · ✨ Us",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4371-kenangan-coffee",
@@ -1480,7 +1570,8 @@
       "expires": "2026-07-24",
       "source": "tg-tastesoulsg",
       "added": "2026-07-22",
-      "blurb": "➡️ 1-for-1 Regular selected coffee · ➡️ Incl. Kenangan Latte, Creamy Latte, Pour Over Black & more · 📆 Now - 24 Jul · 📍 All outlets · ❗️ Free Coffee must be of same flavour. Redeem deal via the Kena"
+      "blurb": "➡️ 1-for-1 Regular selected coffee · ➡️ Incl. Kenangan Latte, Creamy Latte, Pour Over Black & more · 📆 Now - 24 Jul · 📍 All outlets · ❗️ Free Coffee must be of same flavour. Redeem deal via the Kena",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-2013-free-entry-to-national-day-concert-2026",
@@ -1491,12 +1582,13 @@
       "code": null,
       "url": "https://t.me/good2gosg/2013",
       "cards": [],
-      "location": null,
+      "location": "The Meadow, Gardens by the Bay",
       "starts": "2026-07-22",
       "expires": "2026-08-02",
       "source": "tg-good2gosg",
       "added": "2026-07-22",
-      "blurb": "➡️ Family-friendly concert incl. free treats, carnival, performances, fireworks finale & more · ➡️ Ft. Benjamin Kheng, Rahimah Rahim, Hady Mirza & more · 📆 2 Aug · 🕣 4.30pm onwards · 📍 The Meadow, "
+      "blurb": "➡️ Family-friendly concert incl. free treats, carnival, performances, fireworks finale & more · ➡️ Ft. Benjamin Kheng, Rahimah Rahim, Hady Mirza & more · 📆 2 Aug · 🕣 4.30pm onwards · 📍 The Meadow, ",
+      "seenOn": 1
     },
     {
       "id": "tg-kiasufoodies-5241-tiong-bahru-bakery",
@@ -1512,7 +1604,8 @@
       "expires": "2026-08-31",
       "source": "tg-kiasufoodies",
       "added": "2026-07-22",
-      "blurb": "✅ 50% off a Vien/Shio Pan/Pastry with every $20 spend · ✅ Valid till 31 Aug 2026 · 📍Available in stores only · 🔴 T&Cs apply · @kiasufoodies"
+      "blurb": "✅ 50% off a Vien/Shio Pan/Pastry with every $20 spend · ✅ Valid till 31 Aug 2026 · 📍Available in stores only · 🔴 T&Cs apply · @kiasufoodies",
+      "seenOn": 1
     },
     {
       "id": "singpromos-istana-open-house-on-sunday-26-jul-2026",
@@ -1528,7 +1621,8 @@
       "expires": "2026-07-26",
       "source": "singpromos",
       "added": "2026-07-22",
-      "blurb": "For the first time, an evening outdoor concert will be held [ Read more at SINGPROMOS.COM ]"
+      "blurb": "For the first time, an evening outdoor concert will be held [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "singpromos-breadtalk-s-pore-6-buns-for-10-80-promotion-until-26-july-20",
@@ -1544,7 +1638,8 @@
       "expires": "2026-07-26",
       "source": "singpromos",
       "added": "2026-07-22",
-      "blurb": "Enjoy six favourite buns for one great value price [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Enjoy six favourite buns for one great value price [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-2014-dive-into-the-world-of-apex-predators",
@@ -1560,7 +1655,8 @@
       "expires": null,
       "source": "tg-good2gosg",
       "added": "2026-07-22",
-      "blurb": "➡️ Discover how apex predators have evolved to rule the oceans · ➡️ Incl. guided tour, souvenir set, lanyard set & opportunity to witness a live shark feeding session · 📆 Daily · 🕣 9.30am & 1.30pm ("
+      "blurb": "➡️ Discover how apex predators have evolved to rule the oceans · ➡️ Incl. guided tour, souvenir set, lanyard set & opportunity to witness a live shark feeding session · 📆 Daily · 🕣 9.30am & 1.30pm (",
+      "seenOn": 1
     },
     {
       "id": "singpromos-ocbc-s-pore-fixed-deposit-promo-rates-up-to-1-3-p-a-from-22-",
@@ -1576,7 +1672,8 @@
       "expires": null,
       "source": "singpromos",
       "added": "2026-07-22",
-      "blurb": "Lock in up to 1.30% p.a. with S$20,000 through OCBC branches or digital banking. [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Lock in up to 1.30% p.a. with S$20,000 through OCBC branches or digital banking. [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "singpromos-swensen-s-free-side-sundae-or-drink-with-selected-main-dish-",
@@ -1592,7 +1689,8 @@
       "expires": null,
       "source": "singpromos",
       "added": "2026-07-22",
-      "blurb": "Complimentary side, sundae or drink with selected mains during weekday lunch [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Complimentary side, sundae or drink with selected mains during weekday lunch [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "suitesmile-travelgoogoo-visa-esim-promo-free-unlimited-data-in-thailand",
@@ -1610,7 +1708,8 @@
       "expires": null,
       "source": "suitesmile",
       "added": "2026-07-22",
-      "blurb": "Visa cardholders can claim a free eSIM for 3 or 7 days of unlimited data in Thailand via Travelgoogoo."
+      "blurb": "Visa cardholders can claim a free eSIM for 3 or 7 days of unlimited data in Thailand via Travelgoogoo.",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4373-a-shiok-menu-featuring-kopi-siew-dai-kaya-toast-drinks-",
@@ -1626,7 +1725,8 @@
       "expires": null,
       "source": "tg-tastesoulsg",
       "added": "2026-07-22",
-      "blurb": "🇸🇬 Read more: bit.ly/4vGTAaM · @tastesoulsg"
+      "blurb": "🇸🇬 Read more: bit.ly/4vGTAaM · @tastesoulsg",
+      "seenOn": 1
     },
     {
       "id": "tg-confirmgood-3921-small-herb-big-flavour-this-scandinavian-restaurant-dil",
@@ -1642,7 +1742,8 @@
       "expires": null,
       "source": "tg-confirmgood",
       "added": "2026-07-22",
-      "blurb": "🌾 Read more: bit.ly/4b7rE8H · @confirmgood"
+      "blurb": "🌾 Read more: bit.ly/4b7rE8H · @confirmgood",
+      "seenOn": 1
     },
     {
       "id": "tg-confirmgood-3922-planning-a-trip-to-china-consider-these-5-underrated-de",
@@ -1658,7 +1759,8 @@
       "expires": null,
       "source": "tg-confirmgood",
       "added": "2026-07-22",
-      "blurb": "✈️ Read more: bit.ly/4wWB3bD · @confirmgood"
+      "blurb": "✈️ Read more: bit.ly/4wWB3bD · @confirmgood",
+      "seenOn": 1
     },
     {
       "id": "divedeals-samsung-exclusive-deals-new-phone-new-watch",
@@ -1674,7 +1776,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-breadtalk-grab-6-buns-for-just-10-80",
@@ -1690,7 +1793,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-best-denki-warehouse-stock-clearance-up-to-90-off",
@@ -1706,7 +1810,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-tai-cheong-bakery-buy-a-box-of-4-tarts-get-new-cookie-at-10",
@@ -1722,7 +1827,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-greendot-ndp-special-sg-hawker-festive-meal",
@@ -1738,7 +1844,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-itea-ndp-2026-official-principal-partner-new-drink",
@@ -1754,7 +1861,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-itea-buy-2-drinks-and-get-1-free",
@@ -1770,7 +1878,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-melvados-get-10-off-cake-sale",
@@ -1786,7 +1895,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-giant-supermarket-get-10-off-on-foodpanda",
@@ -1802,7 +1912,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-le-creuset-enjoy-up-to-70-off-at-metro-paragon",
@@ -1818,7 +1929,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-harvey-norman-enjoy-up-to-600-off-selected-intel-laptops",
@@ -1834,7 +1946,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-gorogoro-steamboat-korean-buffet-enjoy-buy-2-get-1-free-alco",
@@ -1850,7 +1963,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-gokoku-japanese-bakery-jumbo-seafood-collab-purchase-and-get",
@@ -1866,7 +1980,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-dunkin-donuts-enjoy-1-for-1-latte-cold-brew",
@@ -1882,7 +1997,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-22",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4368-breadtalk",
@@ -1898,7 +2014,8 @@
       "expires": "2026-07-26",
       "source": "tg-tastesoulsg",
       "added": "2026-07-21",
-      "blurb": "➡️ $10.80 for 6 buns · ➡️ Incl. Flosss, Cheese Sausage, Croissant & more · 📆 Now - 26 Jul · 🕙 11am onwards · 📍 Selected outlets · ❗️ Selected buns only. T&Cs apply. · 👉 More info: bit.ly/4wgO28f ·"
+      "blurb": "➡️ $10.80 for 6 buns · ➡️ Incl. Flosss, Cheese Sausage, Croissant & more · 📆 Now - 26 Jul · 🕙 11am onwards · 📍 Selected outlets · ❗️ Selected buns only. T&Cs apply. · 👉 More info: bit.ly/4wgO28f ·",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4369-jollibee",
@@ -1914,7 +2031,8 @@
       "expires": "2026-09-30",
       "source": "tg-tastesoulsg",
       "added": "2026-07-21",
-      "blurb": "➡️ $9.90 Shiok Savers · ➡️ Incl. Chicken Sandwich, Chickenjoy & Spaghetti combos · 📆 Now - 30 Sep · 📍 All outlets. · ❗️ Available for dine-in & takeaway. T&Cs apply. · 👉 More info: bit.ly/4gPJ4KH ·"
+      "blurb": "➡️ $9.90 Shiok Savers · ➡️ Incl. Chicken Sandwich, Chickenjoy & Spaghetti combos · 📆 Now - 30 Sep · 📍 All outlets. · ❗️ Available for dine-in & takeaway. T&Cs apply. · 👉 More info: bit.ly/4gPJ4KH ·",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-2011-free-entry-to-decathlon-sports-fest",
@@ -1925,12 +2043,13 @@
       "code": null,
       "url": "https://t.me/good2gosg/2011",
       "cards": [],
-      "location": null,
+      "location": "230 Stadium Blvd",
       "starts": "2026-08-15",
       "expires": "2026-08-16",
       "source": "tg-good2gosg",
       "added": "2026-07-21",
-      "blurb": "➡️ Biggest free sports festival returns ft. 30+ coach-led sport trials · ➡️ Incl. lacrosse, golf, parkour, snowboarding & more · 📆 15 - 16 Aug · 🕣 9am - 7pm · 📍 230 Stadium Blvd · 👉 More info: bit"
+      "blurb": "➡️ Biggest free sports festival returns ft. 30+ coach-led sport trials · ➡️ Incl. lacrosse, golf, parkour, snowboarding & more · 📆 15 - 16 Aug · 🕣 9am - 7pm · 📍 230 Stadium Blvd · 👉 More info: bit",
+      "seenOn": 1
     },
     {
       "id": "suitesmile-citi-prestige-singapore-airlines-promo-code-s-60-s-120-off-j",
@@ -1948,7 +2067,8 @@
       "expires": "2026-07-27",
       "source": "suitesmile",
       "added": "2026-07-21",
-      "blurb": "From 21 to 27 Jul 2026, pay with the Citi Prestige Card to get S$60-S$120 off Singapore Airlines flights, on up to 5 tickets per transaction (max. S$600)."
+      "blurb": "From 21 to 27 Jul 2026, pay with the Citi Prestige Card to get S$60-S$120 off Singapore Airlines flights, on up to 5 tickets per transaction (max. S$600).",
+      "seenOn": 1
     },
     {
       "id": "suitesmile-cathay-pacific-promo-code-up-to-s-150-off-singapore-hong-kon",
@@ -1964,7 +2084,8 @@
       "expires": "2026-08-09",
       "source": "suitesmile",
       "added": "2026-07-21",
-      "blurb": "From 20 Jul to 9 Aug 2026, redeem a Cathay Pacific promo code for S$60 (solo) or S$150 (2+ pax) off roundtrip flights from Singapore to Hong Kong."
+      "blurb": "From 20 Jul to 9 Aug 2026, redeem a Cathay Pacific promo code for S$60 (solo) or S$150 (2+ pax) off roundtrip flights from Singapore to Hong Kong.",
+      "seenOn": 1
     },
     {
       "id": "tg-kiasufoodies-5240-coffee-bean",
@@ -1980,7 +2101,8 @@
       "expires": "2026-08-02",
       "source": "tg-kiasufoodies",
       "added": "2026-07-21",
-      "blurb": "✅ 61% off Chicago Cheesecake · ✅ Order online till 2 Aug · ✅ Collection 6-30 Aug · 🔴 T&Cs apply, more info here · @kiasufoodies"
+      "blurb": "✅ 61% off Chicago Cheesecake · ✅ Order online till 2 Aug · ✅ Collection 6-30 Aug · 🔴 T&Cs apply, more info here · @kiasufoodies",
+      "seenOn": 1
     },
     {
       "id": "singpromos-kenangan-coffee-s-pore-buy-1-get-1-free-coffee-payday-promo-",
@@ -1996,7 +2118,8 @@
       "expires": "2026-07-24",
       "source": "singpromos",
       "added": "2026-07-21",
-      "blurb": "Buy one Regular coffee via the app and receive another of the same flavour free [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Buy one Regular coffee via the app and receive another of the same flavour free [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "singpromos-namecheap-up-to-97-off-domains-web-hosting-summer-sale-till-",
@@ -2012,7 +2135,8 @@
       "expires": "2026-07-27",
       "source": "singpromos",
       "added": "2026-07-21",
-      "blurb": "Save on domains, hosting, email, SSL and more with limited-time online offers. [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Save on domains, hosting, email, SSL and more with limited-time online offers. [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "singpromos-f-n-magnolia-marks-singapore-s-61st-birthday-with-exclusive-",
@@ -2028,7 +2152,8 @@
       "expires": "2026-08-12",
       "source": "singpromos",
       "added": "2026-07-21",
-      "blurb": "Nourishing the nation since 1937 [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Nourishing the nation since 1937 [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "tg-sgfooddeals-4842-red-house-seafood-50-off-ala-carte-dim-sum",
@@ -2039,12 +2164,13 @@
       "code": null,
       "url": "https://t.me/sgfooddeals/4842",
       "cards": [],
-      "location": null,
+      "location": "Red House Seafood @ Grand Copthorne",
       "starts": "2026-07-21",
       "expires": null,
       "source": "tg-sgfooddeals",
       "added": "2026-07-21",
-      "blurb": "🔹 Enjoy 50% off handcrafted dim sum on weekdays & 30% off on weekends · 🔹Choose from wide selection of dim sum like Crab Meat Siew Mai, Shrimp Dumpling, Chili Crab Bun & more · 📅 Daily (Excluding P"
+      "blurb": "🔹 Enjoy 50% off handcrafted dim sum on weekdays & 30% off on weekends · 🔹Choose from wide selection of dim sum like Crab Meat Siew Mai, Shrimp Dumpling, Chili Crab Bun & more · 📅 Daily (Excluding P",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5137-mcdonald-s-lunch-bag-charm-redeem-for-1-500-points",
@@ -2055,12 +2181,13 @@
       "code": null,
       "url": "https://t.me/sgdealsandfreebies/5137",
       "cards": [],
-      "location": null,
+      "location": "Charm redemption available at 6 restaurants ",
       "starts": "2026-07-27",
       "expires": null,
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-21",
-      "blurb": "✨ Redeem a limited-edition McDonald’s Lunch Bag Charm for 1,500 MyM Rewards Points from 27 July at 3pm, exclusively via the McDonald’s app at 6 selected restaurants, while stocks last. · ✨ Limited to "
+      "blurb": "✨ Redeem a limited-edition McDonald’s Lunch Bag Charm for 1,500 MyM Rewards Points from 27 July at 3pm, exclusively via the McDonald’s app at 6 selected restaurants, while stocks last. · ✨ Limited to ",
+      "seenOn": 1
     },
     {
       "id": "tg-freebiessg-1148-freebie-lancome-absolute-longevity-md",
@@ -2071,12 +2198,13 @@
       "code": null,
       "url": "https://t.me/freebiessg/1148",
       "cards": [],
-      "location": null,
+      "location": "Selected stores",
       "starts": "2026-07-21",
       "expires": null,
       "source": "tg-freebiessg",
       "added": "2026-07-21",
-      "blurb": "🔸 Redeem a free Lancome Absolute Longevity MD trial kit & skin consultation · 🔸 Designed to reduce visible signs of ageing & boost skin's firmness & radiance · 🔸 While stocks last, limited to 1 red"
+      "blurb": "🔸 Redeem a free Lancome Absolute Longevity MD trial kit & skin consultation · 🔸 Designed to reduce visible signs of ageing & boost skin's firmness & radiance · 🔸 While stocks last, limited to 1 red",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-2012-f-b-deals-at-caf-de-paris",
@@ -2087,12 +2215,13 @@
       "code": null,
       "url": "https://t.me/good2gosg/2012",
       "cards": [],
-      "location": null,
+      "location": "313@Somerset, B1-37",
       "starts": "2026-07-21",
       "expires": null,
       "source": "tg-good2gosg",
       "added": "2026-07-21",
-      "blurb": "➡️ $9.90 Meal sets · ➡️ Incl. 1 main & 1 drink · 📆 Weekdays · 🕣 12 - 2pm & 5.30 - 7.30pm · ➡️ 50% off 2nd dessert · ➡️ Incl. Signature Eiffel Tower Bonbons & Ice-cream desserts · 📆 Weekdays · 🕣 Al"
+      "blurb": "➡️ $9.90 Meal sets · ➡️ Incl. 1 main & 1 drink · 📆 Weekdays · 🕣 12 - 2pm & 5.30 - 7.30pm · ➡️ 50% off 2nd dessert · ➡️ Incl. Signature Eiffel Tower Bonbons & Ice-cream desserts · 📆 Weekdays · 🕣 Al",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5139-get-a-complimentary-laura-mercier-trial-kit-featuring-t",
@@ -2108,7 +2237,8 @@
       "expires": null,
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-21",
-      "blurb": "Register to claim yours here: https://sgdealsandfreebies.com/free-laura-mercier-trial-kit-at-setting-wardrobe-pop-up/ · Shop here: https://s.lazada.sg/s.5H5Rr · @sgdealsandfreebies #freesamples"
+      "blurb": "Register to claim yours here: https://sgdealsandfreebies.com/free-laura-mercier-trial-kit-at-setting-wardrobe-pop-up/ · Shop here: https://s.lazada.sg/s.5H5Rr · @sgdealsandfreebies #freesamples",
+      "seenOn": 1
     },
     {
       "id": "singpromos-maybank-s-pore-sgd-time-deposit-promotion-offers-up-to-1-45-",
@@ -2124,7 +2254,8 @@
       "expires": null,
       "source": "singpromos",
       "added": "2026-07-21",
-      "blurb": "Lock in up to 1.45% p.a. across six, nine or 12-month Singapore dollar placements. [ Read more at SINGPROMOS.COM ]"
+      "blurb": "Lock in up to 1.45% p.a. across six, nine or 12-month Singapore dollar placements. [ Read more at SINGPROMOS.COM ]",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5136-3-off-20-shopee-voucher",
@@ -2140,7 +2271,8 @@
       "expires": null,
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-21",
-      "blurb": "Claim yours: · https://s.shopee.sg/6pzHdaVloD · @sgdealsandfreebies"
+      "blurb": "Claim yours: · https://s.shopee.sg/6pzHdaVloD · @sgdealsandfreebies",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4370-missed-ka-soh-its-famous-fish-noodle-soup-and-crispy-pr",
@@ -2156,7 +2288,8 @@
       "expires": null,
       "source": "tg-tastesoulsg",
       "added": "2026-07-21",
-      "blurb": "🍗 Read more: bit.ly/3RJSbm0 · @tastesoulsg"
+      "blurb": "🍗 Read more: bit.ly/3RJSbm0 · @tastesoulsg",
+      "seenOn": 1
     },
     {
       "id": "tg-confirmgood-3919-we-scouted-the-best-cakes-so-you-don-t-have-to-because-",
@@ -2172,7 +2305,8 @@
       "expires": null,
       "source": "tg-confirmgood",
       "added": "2026-07-21",
-      "blurb": "🍰 Read more: bit.ly/4yxY6v0 · @confirmgood"
+      "blurb": "🍰 Read more: bit.ly/4yxY6v0 · @confirmgood",
+      "seenOn": 1
     },
     {
       "id": "divedeals-popular-bookstore-buy-2-or-more-manga-and-enjoy-20-off",
@@ -2188,7 +2322,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-21",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-robinsons-singapore-get-extra-10-off-on-mamamoo-collections",
@@ -2204,7 +2339,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-21",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-puma-up-to-30-off-selected-items",
@@ -2220,7 +2356,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-21",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-robinsons-singapore-get-up-to-75-off-on-your-perfect-pillow",
@@ -2236,7 +2373,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-21",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-polar-puffs-cakes-buy-2-get-1-free-chicken-rendang-puff",
@@ -2252,7 +2390,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-21",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-iherb-enjoy-25-off-on-weekly-grocery-checklist",
@@ -2268,7 +2407,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-21",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-tim-ho-wan-sg61-flavours-of-singapore-menu-stars-6-50",
@@ -2284,7 +2424,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-21",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "tg-sgfooddeals-4840-cb-brand-mega-frozen-food-sale-from-1",
@@ -2295,12 +2436,13 @@
       "code": null,
       "url": "https://t.me/sgfooddeals/4840",
       "cards": [],
-      "location": null,
+      "location": "2 Bukit Batok Street 23, #01-15",
       "starts": "2026-07-20",
       "expires": "2026-07-31",
       "source": "tg-sgfooddeals",
       "added": "2026-07-20",
-      "blurb": "🔹 Shop frozen goods including wagyu, premium seafood, hotpot ingredients & more from $1 · 📅 Now till 31 Jul · ⏰ Mon - Sat: 8AM - 6PM · ⏰ Sun: 10AM - 6PM · 📍 2 Bukit Batok Street 23, #01-15 · Find o"
+      "blurb": "🔹 Shop frozen goods including wagyu, premium seafood, hotpot ingredients & more from $1 · 📅 Now till 31 Jul · ⏰ Mon - Sat: 8AM - 6PM · ⏰ Sun: 10AM - 6PM · 📍 2 Bukit Batok Street 23, #01-15 · Find o",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-2009-butterbear-walk-comes-to-sg",
@@ -2316,7 +2458,8 @@
       "expires": "2026-10-17",
       "source": "tg-good2gosg",
       "added": "2026-07-20",
-      "blurb": "➡️ 3km interactive walking experience to Orchard Gateway + pre-event in-mall adventure · ➡️ FREE race pack upon signing up + merch for purchase incl. bandana, sling bag, apron & more · 📆 17 Oct · 🕣 "
+      "blurb": "➡️ 3km interactive walking experience to Orchard Gateway + pre-event in-mall adventure · ➡️ FREE race pack upon signing up + merch for purchase incl. bandana, sling bag, apron & more · 📆 17 Oct · 🕣 ",
+      "seenOn": 1
     },
     {
       "id": "tg-kiasufoodies-5239-domino-s",
@@ -2332,7 +2475,8 @@
       "expires": "2026-07-27",
       "source": "tg-kiasufoodies",
       "added": "2026-07-20",
-      "blurb": "✅ Regular Pizza from $4.99 · ✅ 20-27 Jul · ✅ Order with code 785735 · 🔴 T&Cs apply, more info here · @kiasufoodies"
+      "blurb": "✅ Regular Pizza from $4.99 · ✅ 20-27 Jul · ✅ Order with code 785735 · 🔴 T&Cs apply, more info here · @kiasufoodies",
+      "seenOn": 1
     },
     {
       "id": "tg-confirmgood-3917-sentosa-s-grillfest-returns-from-23-july-to-16-august-2",
@@ -2348,7 +2492,8 @@
       "expires": "2026-08-16",
       "source": "tg-confirmgood",
       "added": "2026-07-20",
-      "blurb": "🥩 Read more: bit.ly/4xP2tBr · @confirmgood"
+      "blurb": "🥩 Read more: bit.ly/4xP2tBr · @confirmgood",
+      "seenOn": 1
     },
     {
       "id": "tg-sgweekend-3727-tada-win-ride-vouchers-dyson-v12-more",
@@ -2359,12 +2504,13 @@
       "code": null,
       "url": "https://t.me/sgweekend/3727",
       "cards": [],
-      "location": null,
+      "location": "TADA app",
       "starts": "2026-07-20",
       "expires": null,
       "source": "tg-sgweekend",
       "added": "2026-07-20",
-      "blurb": "🔻 Form a group friends & complete rides together to unlock rewards · 🔻 Stand to win $400k vouchers, Dyson V12 Origin, Secretlab Titan Eco & more · 📅 Every week of Jul · 📍 TADA app · More info: tco"
+      "blurb": "🔻 Form a group friends & complete rides together to unlock rewards · 🔻 Stand to win $400k vouchers, Dyson V12 Origin, Secretlab Titan Eco & more · 📅 Every week of Jul · 📍 TADA app · More info: tco",
+      "seenOn": 1
     },
     {
       "id": "tg-goodlobang-4580-circles-life-5g-all-ai-access-60-off",
@@ -2380,7 +2526,8 @@
       "expires": null,
       "source": "tg-goodlobang",
       "added": "2026-07-20",
-      "blurb": "✨ FREE 5G UPGRADE — Ending Soon! Get all-in-one access to 6 premium AI tools, plus 1TB of 5G data, for just $6/month — U.P. $15/month. · ➡️ Now on blazing-fast 5G network + Unlimited talktime · ➡️ Inc"
+      "blurb": "✨ FREE 5G UPGRADE — Ending Soon! Get all-in-one access to 6 premium AI tools, plus 1TB of 5G data, for just $6/month — U.P. $15/month. · ➡️ Now on blazing-fast 5G network + Unlimited talktime · ➡️ Inc",
+      "seenOn": 1
     },
     {
       "id": "tg-confirmgood-3915-recovering-from-world-cup-fever-check-out-what-else-is-",
@@ -2396,7 +2543,8 @@
       "expires": null,
       "source": "tg-confirmgood",
       "added": "2026-07-20",
-      "blurb": "🍰 Save these deals for your next birthday celebration · 🍰 HoYo FEST 2026 Singapore is happening next week · 🍰 Plan your next Bangkok trip with these recommendations · 🍰 New 1-Minute Melt Tender St"
+      "blurb": "🍰 Save these deals for your next birthday celebration · 🍰 HoYo FEST 2026 Singapore is happening next week · 🍰 Plan your next Bangkok trip with these recommendations · 🍰 New 1-Minute Melt Tender St",
+      "seenOn": 1
     },
     {
       "id": "suitesmile-trust-cashback-card-nerf-no-free-overseas-atm-withdrawals",
@@ -2412,7 +2560,8 @@
       "expires": null,
       "source": "suitesmile",
       "added": "2026-07-20",
-      "blurb": "The Trust Cashback Card is no longer able to withdraw cash from the Trust savings account through overseas ATMs. Check out the best alternatives right now."
+      "blurb": "The Trust Cashback Card is no longer able to withdraw cash from the Trust savings account through overseas ATMs. Check out the best alternatives right now.",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4366-shake-shack",
@@ -2428,7 +2577,8 @@
       "expires": null,
       "source": "tg-tastesoulsg",
       "added": "2026-07-20",
-      "blurb": "➡️ NEW Summer Greek Shack menu · ➡️ Incl. Summer Greek Shack, Chicken, Fries & more · 📆 Now · 📍 All outlets · 👉 More info: bit.ly/4vIGFFo · @tastesoulsg"
+      "blurb": "➡️ NEW Summer Greek Shack menu · ➡️ Incl. Summer Greek Shack, Chicken, Fries & more · 📆 Now · 📍 All outlets · 👉 More info: bit.ly/4vIGFFo · @tastesoulsg",
+      "seenOn": 1
     },
     {
       "id": "milelion-citi-prestige-card-offering-up-to-s-600-off-singapore-airlin",
@@ -2446,7 +2596,8 @@
       "expires": null,
       "source": "milelion",
       "added": "2026-07-20",
-      "blurb": "Citi Prestige Cardholders can save up to S$600 off Singapore Airlines flights at 10 a.m today, for bookings across all cabins and destinations."
+      "blurb": "Citi Prestige Cardholders can save up to S$600 off Singapore Airlines flights at 10 a.m today, for bookings across all cabins and destinations.",
+      "seenOn": 1
     },
     {
       "id": "tg-confirmgood-3916-hello-kopi-siew-dai-takeaway-is-now-something-you-can-s",
@@ -2462,7 +2613,8 @@
       "expires": null,
       "source": "tg-confirmgood",
       "added": "2026-07-20",
-      "blurb": "🇸🇬 Read more: bit.ly/4w7R1zB · @confirmgood"
+      "blurb": "🇸🇬 Read more: bit.ly/4w7R1zB · @confirmgood",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4367-come-hungry-leave-happy-savour-the-flavours-of-the-lion",
@@ -2478,7 +2630,8 @@
       "expires": null,
       "source": "tg-tastesoulsg",
       "added": "2026-07-20",
-      "blurb": "🌶️ Read more: bit.ly/4fcsbc4 · @tastesoulsg"
+      "blurb": "🌶️ Read more: bit.ly/4fcsbc4 · @tastesoulsg",
+      "seenOn": 1
     },
     {
       "id": "divedeals-bhg-bhg-atrium-sale-up-to-75-off",
@@ -2494,7 +2647,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-popeyes-get-the-popeyes-week-bucket-for-just-15",
@@ -2510,7 +2664,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-unazen-celebrate-unagi-day-with-20-off-at-unazen",
@@ -2526,7 +2681,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-circleslife-60-off-ultimate-ai-superplan-6-month",
@@ -2542,7 +2698,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-sushi-express-get-up-to-15-off-all-colour-plates",
@@ -2558,7 +2715,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-menya-kokoro-special-national-day-set-for-19-65",
@@ -2574,7 +2732,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-watami-japanese-dining-enjoy-summer-stamina-special-for-just",
@@ -2590,7 +2749,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-guardian-enjoy-10-off-on-the-swisse-nutra-range",
@@ -2606,7 +2766,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-little-ground-singapore-final-storewide-sale-up-to-70-off",
@@ -2622,7 +2783,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-cedele-enjoy-18-off-blue-pea-pandan-coconut-cake",
@@ -2638,7 +2800,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-sushi-express-get-anniversary-e-vouchers-5-off",
@@ -2654,7 +2817,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-domino-s-pizza-mega-week-regular-pizza-for-4-99",
@@ -2670,7 +2834,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-cat-the-fiddle-cakes-national-cheseecake-month-at-35",
@@ -2686,7 +2851,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-o-coffee-club-enjoy-local-indulgence-set-meal-for-32-90",
@@ -2702,7 +2868,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-popeyes-enjoy-1-for-1-mac-attack-bundle",
@@ -2718,7 +2885,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-20",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "tg-sgfooddeals-4839-score-healthy-food-deals-on-iherb",
@@ -2734,7 +2902,8 @@
       "expires": "2026-09-30",
       "source": "tg-sgfooddeals",
       "added": "2026-07-19",
-      "blurb": "🔹 Enjoy 25% off snacks, drinks & pantry staples from South Korea, United States & more using code <SGTEL25> · 🔹 Shop for less on chia seeds, energy bars, organic fruit snacks, fluffy pancake mix, su"
+      "blurb": "🔹 Enjoy 25% off snacks, drinks & pantry staples from South Korea, United States & more using code <SGTEL25> · 🔹 Shop for less on chia seeds, energy bars, organic fruit snacks, fluffy pancake mix, su",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5132-24th-beutea-free-drink-drop",
@@ -2750,7 +2919,8 @@
       "expires": null,
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-19",
-      "blurb": "A FREE Beutea Golden Guan Yin Pure Tea is waiting at Beutea Tampines 1 RIGHT NOW! ⏰ · 🏃 Only DM if you’re able to collect the drink shortly. Be the FIRST to DM @sgdealsandfreebies on Instagram with y"
+      "blurb": "A FREE Beutea Golden Guan Yin Pure Tea is waiting at Beutea Tampines 1 RIGHT NOW! ⏰ · 🏃 Only DM if you’re able to collect the drink shortly. Be the FIRST to DM @sgdealsandfreebies on Instagram with y",
+      "seenOn": 1
     },
     {
       "id": "milelion-hyatt-brand-explorer-earn-free-nights-for-staying-at-differe",
@@ -2766,7 +2936,8 @@
       "expires": null,
       "source": "milelion",
       "added": "2026-07-19",
-      "blurb": "World of Hyatt members are rewarded with a free night for every five brands they stay at — here’s how to get started."
+      "blurb": "World of Hyatt members are rewarded with a free night for every five brands they stay at — here’s how to get started.",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5134-exclusive-25-off-shopee-voucher",
@@ -2782,7 +2953,8 @@
       "expires": null,
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-19",
-      "blurb": "Claim yours: · https://s.shopee.sg/9AN1QLA3hC · @sgdealsandfreebies"
+      "blurb": "Claim yours: · https://s.shopee.sg/9AN1QLA3hC · @sgdealsandfreebies",
+      "seenOn": 1
     },
     {
       "id": "divedeals-linkus-1-for-1-signature-must-try-dish-vouchers",
@@ -2798,7 +2970,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-19",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "tg-sgdealsandfreebies-5133-24th-beutea-free-drink-drop-a-free-beutea-golden-guan-y",
@@ -2814,7 +2987,8 @@
       "expires": null,
       "source": "tg-sgdealsandfreebies",
       "added": "2026-07-19",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "tg-kiasufoodies-5236-burger-king",
@@ -2830,7 +3004,8 @@
       "expires": "2026-07-27",
       "source": "tg-kiasufoodies",
       "added": "2026-07-18",
-      "blurb": "✅ 1-for-1 Smoky Maple Burgers · ✅ Till 27 Jul · 📍 All outlets, while stocks last · 🔴 T&Cs apply, more info here · @kiasufoodies"
+      "blurb": "✅ 1-for-1 Smoky Maple Burgers · ✅ Till 27 Jul · 📍 All outlets, while stocks last · 🔴 T&Cs apply, more info here · @kiasufoodies",
+      "seenOn": 1
     },
     {
       "id": "tg-sgfooddeals-4838-free-flow-steak-1-for-1-buffet-in-orchard",
@@ -2846,7 +3021,8 @@
       "expires": null,
       "source": "tg-sgfooddeals",
       "added": "2026-07-18",
-      "blurb": "🔹 Treat yourself with these SG61 limited-time dining deals: · 1️⃣ Book a table for free-flow 250g striploin steak · 2️⃣ 2-Day NDP Weekend SG Shiok Local Brunch · 3️⃣ 1-for-1 Local High Tea every Satu"
+      "blurb": "🔹 Treat yourself with these SG61 limited-time dining deals: · 1️⃣ Book a table for free-flow 250g striploin steak · 2️⃣ 2-Day NDP Weekend SG Shiok Local Brunch · 3️⃣ 1-for-1 Local High Tea every Satu",
+      "seenOn": 1
     },
     {
       "id": "divedeals-sushi-express-enjoy-0-61-off-with-a-minimum-spend-of-10",
@@ -2862,7 +3038,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-robinsons-singapore-get-10-off-your-favorites-ive-collection",
@@ -2878,7 +3055,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-guardian-enjoy-20-off-on-probiotic-life-space",
@@ -2894,7 +3072,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-bhg-sg61-promotion-get-skechers-from-50",
@@ -2910,7 +3089,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-butcher-box-get-tender-valley-sirloin-is-now-15-off",
@@ -2926,7 +3106,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-burger-king-enjoy-1-for-1-breaded-banana-bites",
@@ -2942,7 +3123,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-burger-king-enjoy-1-for-1-smoky-maple-mayo-burgers",
@@ -2958,7 +3140,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-liho-tea-get-americano-or-signature-coffee-for-just-2",
@@ -2974,7 +3157,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-singtel-online-flash-sale",
@@ -2990,7 +3174,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-pororo-park-singapore-enjoy-satay-for-only-9-90-at-loopy-s-c",
@@ -3006,7 +3191,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-18",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "tg-goodlobang-4578-wisma-haidilao",
@@ -3017,12 +3203,13 @@
       "code": null,
       "url": "https://t.me/goodlobang/4578",
       "cards": [],
-      "location": null,
+      "location": "Wisma Atria, 03-15",
       "starts": "2026-07-17",
       "expires": "2026-08-31",
       "source": "tg-goodlobang",
       "added": "2026-07-17",
-      "blurb": "➡️ $5++ Moutai Lala Soup Base Add-on · ➡️ $5++ Selected Signature Dishes · ➡️ Customisable Solo Hotpot Set from S$9.90 · ➡️ + exclusive member specials · 📆 Now - 31 Aug · 📍 Wisma Atria, 03-15 · ❗️ P"
+      "blurb": "➡️ $5++ Moutai Lala Soup Base Add-on · ➡️ $5++ Selected Signature Dishes · ➡️ Customisable Solo Hotpot Set from S$9.90 · ➡️ + exclusive member specials · 📆 Now - 31 Aug · 📍 Wisma Atria, 03-15 · ❗️ P",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-2008-sanrio-characters-at-marina-square",
@@ -3033,12 +3220,13 @@
       "code": null,
       "url": "https://t.me/good2gosg/2008",
       "cards": [],
-      "location": null,
+      "location": "L2 Marina Foyer",
       "starts": "2026-07-17",
       "expires": "2026-08-16",
       "source": "tg-good2gosg",
       "added": "2026-07-17",
-      "blurb": "➡️ SG-inspired interactive Sanrio characters experience + exclusive collectibles · ➡️ Incl. FREE stickers, photo ops, pop-up store & more · 📆 Now - 16 Aug · 🕣 11am - 10pm · 📍 L2 Marina Foyer · 👉 M"
+      "blurb": "➡️ SG-inspired interactive Sanrio characters experience + exclusive collectibles · ➡️ Incl. FREE stickers, photo ops, pop-up store & more · 📆 Now - 16 Aug · 🕣 11am - 10pm · 📍 L2 Marina Foyer · 👉 M",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4362-chick-fil-a",
@@ -3049,12 +3237,13 @@
       "code": null,
       "url": "https://t.me/tastesoulsg/4362",
       "cards": [],
-      "location": null,
+      "location": "Millenia Walk, 01-54/55/56",
       "starts": "2026-07-17",
       "expires": "2026-07-30",
       "source": "tg-tastesoulsg",
       "added": "2026-07-17",
-      "blurb": "➡️ NEW outlet opening at Millenia Walk · 📆 30 Jul onwards | Mon - Sat · 🕣 10.30am - 9.30pm · 📍 Millenia Walk, 01-54/55/56 · 👉 More info: bit.ly/4hcHVgo · @tastesoulsg"
+      "blurb": "➡️ NEW outlet opening at Millenia Walk · 📆 30 Jul onwards | Mon - Sat · 🕣 10.30am - 9.30pm · 📍 Millenia Walk, 01-54/55/56 · 👉 More info: bit.ly/4hcHVgo · @tastesoulsg",
+      "seenOn": 1
     },
     {
       "id": "tg-sgfooddeals-4836-acid-bar-burger-unlimited-fries-deal",
@@ -3065,12 +3254,13 @@
       "code": null,
       "url": "https://t.me/sgfooddeals/4836",
       "cards": [],
-      "location": null,
+      "location": "180 Orchard Road, Peranakan Place",
       "starts": "2026-07-17",
       "expires": null,
       "source": "tg-sgfooddeals",
       "added": "2026-07-17",
-      "blurb": "🔹 Load up during lunch with a burger set & unlimited fries for only $12.90++ · 🔹 Pair a juicy burger with your choice of golden crispy shoestring, Truffle, or Mala fries · ⏰ 11.30AM - 3PM (Daily) · "
+      "blurb": "🔹 Load up during lunch with a burger set & unlimited fries for only $12.90++ · 🔹 Pair a juicy burger with your choice of golden crispy shoestring, Truffle, or Mala fries · ⏰ 11.30AM - 3PM (Daily) · ",
+      "seenOn": 1
     },
     {
       "id": "tg-goodlobang-4576-gopizza",
@@ -3086,7 +3276,8 @@
       "expires": null,
       "source": "tg-goodlobang",
       "added": "2026-07-17",
-      "blurb": "➡️ Buy 1 Pizza, Get 2nd Pizza at 60¢ · ➡️ Flavours incl. Chicken Buldak, K-Truffle Signature, Hawaiian Twist & more · 📆 Now - end date unspecified · 📍 All outlets · ❗️ T&Cs apply. · 👉 More info: bi"
+      "blurb": "➡️ Buy 1 Pizza, Get 2nd Pizza at 60¢ · ➡️ Flavours incl. Chicken Buldak, K-Truffle Signature, Hawaiian Twist & more · 📆 Now - end date unspecified · 📍 All outlets · ❗️ T&Cs apply. · 👉 More info: bi",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4363-takagi-ramen",
@@ -3102,7 +3293,8 @@
       "expires": null,
       "source": "tg-tastesoulsg",
       "added": "2026-07-17",
-      "blurb": "➡️ 1-for-1 Crab Ramen · ➡️ Incl. Chilli Crab & Salted Egg · 📆 Now - end date unspecified · 📍 All outlets · 👉 More info: bit.ly/4gJ7fdH · @tastesoulsg"
+      "blurb": "➡️ 1-for-1 Crab Ramen · ➡️ Incl. Chilli Crab & Salted Egg · 📆 Now - end date unspecified · 📍 All outlets · 👉 More info: bit.ly/4gJ7fdH · @tastesoulsg",
+      "seenOn": 1
     },
     {
       "id": "divedeals-marina-square-celebrate-national-day-with-sanrio-characters",
@@ -3118,7 +3310,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-muji-enjoy-15-off-selected-pp-storage-series",
@@ -3134,7 +3327,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-muji-get-the-muji-body-pillow-for-just-16-90",
@@ -3150,7 +3344,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-kai-duck-national-day-promotion-save-39-off",
@@ -3166,7 +3361,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-kai-duck-get-50-off-half-roasted-duck-cheong-fun",
@@ -3182,7 +3378,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-harvey-norman-vacuum-up-big-savings-up-to-77-off",
@@ -3198,7 +3395,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-guardian-enjoy-30-off-on-21st-century-prebiotic",
@@ -3214,7 +3412,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-bhg-sg61-deal-get-2-boxes-trulife-for-61",
@@ -3230,7 +3429,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-bhg-enjoy-up-to-80-off-on-braun-buffel",
@@ -3246,7 +3446,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-duozoulu-singapore-goodbye-sale-50-off-all-shoes",
@@ -3262,7 +3463,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-uplay-creative-glass-cup-painting-experience",
@@ -3278,7 +3480,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-uplay-kidodo-space-indoor-playground",
@@ -3294,7 +3497,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-uplay-singapore-slingshot-admission-for-2-pax",
@@ -3310,7 +3514,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-uplay-exclusive-voucher-segar-downtown-east",
@@ -3326,7 +3531,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-uplay-free-month-of-uplay-premium-membership",
@@ -3342,7 +3548,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-cai-ca-celebrate-sg61-with-0-61-special",
@@ -3358,7 +3565,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-r-b-tea-croissties-for-3-50-with-any-drink-purchase",
@@ -3374,7 +3582,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-r-b-tea-enjoy-10-off-for-orders-of-100-cups-or-more",
@@ -3390,7 +3599,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-kopitiam-enjoy-bagus-5-flash-deals",
@@ -3406,7 +3616,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "divedeals-tott-enjoy-tott-brand-sale-up-to-50-off",
@@ -3422,7 +3633,8 @@
       "expires": null,
       "source": "divedeals",
       "added": "2026-07-17",
-      "blurb": ""
+      "blurb": "",
+      "seenOn": 1
     },
     {
       "id": "tg-tastesoulsg-4361-haidilao-sun-plaza",
@@ -3433,12 +3645,13 @@
       "code": null,
       "url": "https://t.me/tastesoulsg/4361",
       "cards": [],
-      "location": null,
+      "location": "Sun Plaza, #02-01",
       "starts": "2026-07-16",
       "expires": "2026-07-31",
       "source": "tg-tastesoulsg",
       "added": "2026-07-16",
-      "blurb": "➡️ $1++ 2nd plate of Premium Meats · ➡️ Incl. Fish Fillet, Chicken Fillet, Haidilao Beef & Duroc Pork Belly · 📆 Now - 31 Jul · 🕣 Before 6pm (Mon - Fri) | Before 5pm (Sat & Sun) | After 10pm (Sun - T"
+      "blurb": "➡️ $1++ 2nd plate of Premium Meats · ➡️ Incl. Fish Fillet, Chicken Fillet, Haidilao Beef & Duroc Pork Belly · 📆 Now - 31 Jul · 🕣 Before 6pm (Mon - Fri) | Before 5pm (Sat & Sun) | After 10pm (Sun - T",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-2006-free-entry-to-singapore-night-festival-2026",
@@ -3449,12 +3662,13 @@
       "code": null,
       "url": "https://t.me/good2gosg/2006",
       "cards": [],
-      "location": null,
+      "location": "Bras Basah.Bugis",
       "starts": "2026-08-21",
       "expires": "2026-09-05",
       "source": "tg-good2gosg",
       "added": "2026-07-16",
-      "blurb": "➡️ Ft. immersive artworks, performances & reimagined storytelling traditions · ➡️ Programmes incl. Tales Of Earth and Sea, Rising Of Sister Islands, Horror Nights @ Oldham Theatre & more · 📆 21 Aug -"
+      "blurb": "➡️ Ft. immersive artworks, performances & reimagined storytelling traditions · ➡️ Programmes incl. Tales Of Earth and Sea, Rising Of Sister Islands, Horror Nights @ Oldham Theatre & more · 📆 21 Aug -",
+      "seenOn": 1
     },
     {
       "id": "tg-confirmgood-3907-hoyo-fest-2026-is-landing-in-singapore-from-31-july-to-",
@@ -3470,7 +3684,8 @@
       "expires": "2026-08-02",
       "source": "tg-confirmgood",
       "added": "2026-07-15",
-      "blurb": "👾 Read more: bit.ly/3RC2Oar · @confirmgood"
+      "blurb": "👾 Read more: bit.ly/3RC2Oar · @confirmgood",
+      "seenOn": 1
     },
     {
       "id": "tg-sgfooddeals-4826-free-sanrio-handheld-fan-with-only-on-grab-merchants",
@@ -3481,12 +3696,13 @@
       "code": null,
       "url": "https://t.me/sgfooddeals/4826",
       "cards": [],
-      "location": null,
+      "location": "Grab app",
       "starts": "2026-07-14",
       "expires": "2026-07-24",
       "source": "tg-sgfooddeals",
       "added": "2026-07-14",
-      "blurb": "🔹 Get a limited-edition Sanrio characters Handheld Fan when you complete 2 orders from Only on Grab merchants · 🔹 Spend a min. of $40 on GrabFood or $65 on GrabMart per order to qualify · 🔹 Collect"
+      "blurb": "🔹 Get a limited-edition Sanrio characters Handheld Fan when you complete 2 orders from Only on Grab merchants · 🔹 Spend a min. of $40 on GrabFood or $65 on GrabMart per order to qualify · 🔹 Collect",
+      "seenOn": 1
     },
     {
       "id": "tg-goodlobang-4569-jett-barbecue",
@@ -3497,12 +3713,13 @@
       "code": null,
       "url": "https://t.me/goodlobang/4569",
       "cards": [],
-      "location": null,
+      "location": "Siloso Beach, Store 31",
       "starts": "2026-07-24",
       "expires": "2026-08-16",
       "source": "tg-goodlobang",
       "added": "2026-07-14",
-      "blurb": "➡️ FREE Smoked Beef Cheek Taco · 📆 23 Jul & 24 Jul - 16 Aug (Every Fri - Sun) · 🕐 4pm - OOS · 📍 Siloso Beach, Store 31 · ❗ Only 100 available daily. T&Cs apply. · 👉 More info: bit.ly/4wF8243 · @go"
+      "blurb": "➡️ FREE Smoked Beef Cheek Taco · 📆 23 Jul & 24 Jul - 16 Aug (Every Fri - Sun) · 🕐 4pm - OOS · 📍 Siloso Beach, Store 31 · ❗ Only 100 available daily. T&Cs apply. · 👉 More info: bit.ly/4wF8243 · @go",
+      "seenOn": 1
     },
     {
       "id": "tg-goodlobang-4571-only-on-grab-sanrio-characters",
@@ -3513,12 +3730,13 @@
       "code": null,
       "url": "https://t.me/goodlobang/4571",
       "cards": [],
-      "location": null,
+      "location": "Grab App",
       "starts": "2026-07-14",
       "expires": "2026-07-24",
       "source": "tg-goodlobang",
       "added": "2026-07-14",
-      "blurb": "➡️ Make 2 orders from Only on Grab merchants to get a limited-edition Sanrio characters handheld fan (Designs assigned at random) · 📆 Now - 24 Jul · 📍 Grab App · ❗️ While stocks last. T&Cs apply. · "
+      "blurb": "➡️ Make 2 orders from Only on Grab merchants to get a limited-edition Sanrio characters handheld fan (Designs assigned at random) · 📆 Now - 24 Jul · 📍 Grab App · ❗️ While stocks last. T&Cs apply. · ",
+      "seenOn": 2
     },
     {
       "id": "tg-good2gosg-2001-craftholic-mofmofriends-pop-up",
@@ -3529,12 +3747,13 @@
       "code": null,
       "url": "https://t.me/good2gosg/2001",
       "cards": [],
-      "location": null,
+      "location": "Changi Airport T3 & T4 Departure Hall, L2",
       "starts": "2026-07-14",
       "expires": "2026-09-09",
       "source": "tg-good2gosg",
       "added": "2026-07-14",
-      "blurb": "➡️ Free entry to Japan-designed plush brands pop-up store · ➡️ Incl. plushies, accessories, lifestyle goods & more · 📆 Now - 9 Sep · 🕣 10am - 10pm · 📍 Changi Airport T3 & T4 Departure Hall, L2 · 👉"
+      "blurb": "➡️ Free entry to Japan-designed plush brands pop-up store · ➡️ Incl. plushies, accessories, lifestyle goods & more · 📆 Now - 9 Sep · 🕣 10am - 10pm · 📍 Changi Airport T3 & T4 Departure Hall, L2 · 👉",
+      "seenOn": 1
     },
     {
       "id": "tg-kiasufoodies-5229-only-on-grab",
@@ -3550,7 +3769,8 @@
       "expires": "2026-07-24",
       "source": "tg-kiasufoodies",
       "added": "2026-07-13",
-      "blurb": "✅ Make 2 Only on Grab orders to get a limited-edition Sanrio characters handheld fan blind box · ✅ 13-24 Jul, while stocks last · 🔴 T&Cs apply, more info here · @kiasufoodies"
+      "blurb": "✅ Make 2 Only on Grab orders to get a limited-edition Sanrio characters handheld fan blind box · ✅ 13-24 Jul, while stocks last · 🔴 T&Cs apply, more info here · @kiasufoodies",
+      "seenOn": 1
     },
     {
       "id": "tg-freebiessg-1140-freebie-dolce-gabbana-light-blue-perfume-gel",
@@ -3561,12 +3781,13 @@
       "code": null,
       "url": "https://t.me/freebiessg/1140",
       "cards": [],
-      "location": null,
+      "location": "TANGS, Tang Plaza Level 1",
       "starts": "2026-07-12",
       "expires": "2026-07-31",
       "source": "tg-freebiessg",
       "added": "2026-07-12",
-      "blurb": "🔸 Redeem a free 3-pc Dolce & Gabbana’s Light Blue Perfume Gel sample kit · 🔸 A citrus-woody-floral summer scent packed with hyaluronic acid for long & gentle wear · 🔸 While stocks last, limited to "
+      "blurb": "🔸 Redeem a free 3-pc Dolce & Gabbana’s Light Blue Perfume Gel sample kit · 🔸 A citrus-woody-floral summer scent packed with hyaluronic acid for long & gentle wear · 🔸 While stocks last, limited to ",
+      "seenOn": 1
     },
     {
       "id": "tg-kiasufoodies-5227-secret-recipe",
@@ -3577,12 +3798,13 @@
       "code": null,
       "url": "https://t.me/kiasufoodies/5227",
       "cards": [],
-      "location": null,
+      "location": "Plaza Sing, Toa Payoh",
       "starts": "2026-07-11",
       "expires": "2026-07-31",
       "source": "tg-kiasufoodies",
       "added": "2026-07-11",
-      "blurb": "✅ 1-for-1 braised beef cheek · ✅ Till 31 Jul · 📍 Plaza Sing, Toa Payoh · 🔴 T&Cs apply, more info here · @kiasufoodies"
+      "blurb": "✅ 1-for-1 braised beef cheek · ✅ Till 31 Jul · 📍 Plaza Sing, Toa Payoh · 🔴 T&Cs apply, more info here · @kiasufoodies",
+      "seenOn": 1
     },
     {
       "id": "tg-sgweekend-3719-free-spots-to-watch-ndp-2026-fireworks",
@@ -3598,7 +3820,8 @@
       "expires": "2026-08-09",
       "source": "tg-sgweekend",
       "added": "2026-07-10",
-      "blurb": "✨ Celebrate SG61 with this list of places perfect for catching the National Day fireworks · 📅 Previews: 11 Jul, 18 Jul, 25 Jul & 1 Aug · 📅 Actual Parade: 9 Aug · ⏰ First fireworks: 7.30PM · ⏰ Final "
+      "blurb": "✨ Celebrate SG61 with this list of places perfect for catching the National Day fireworks · 📅 Previews: 11 Jul, 18 Jul, 25 Jul & 1 Aug · 📅 Actual Parade: 9 Aug · ⏰ First fireworks: 7.30PM · ⏰ Final ",
+      "seenOn": 1
     },
     {
       "id": "tg-good2gosg-1997-hoyo-fest-2026-returns-with-stamp-rallies-merch-more",
@@ -3609,12 +3832,13 @@
       "code": null,
       "url": "https://t.me/good2gosg/1997",
       "cards": [],
-      "location": null,
+      "location": "Suntec Convention Centre, Hall 403",
       "starts": "2026-07-31",
       "expires": "2026-08-02",
       "source": "tg-good2gosg",
       "added": "2026-07-10",
-      "blurb": "➡️ Dedicated HoYoverse games convention returns ft. activity booths, exclusive merch, experience zones & more · ➡️ + FREE merch when you take part in stamp rally & booth activities · 📆 31 Jul - 2 Aug"
+      "blurb": "➡️ Dedicated HoYoverse games convention returns ft. activity booths, exclusive merch, experience zones & more · ➡️ + FREE merch when you take part in stamp rally & booth activities · 📆 31 Jul - 2 Aug",
+      "seenOn": 1
     },
     {
       "id": "tg-kiasufoodies-5224-peach-garden",
@@ -3630,7 +3854,8 @@
       "expires": "2026-07-31",
       "source": "tg-kiasufoodies",
       "added": "2026-07-09",
-      "blurb": "✅ $3++ dim sum on weekdays · ✅ $4++ dim sum on weekend · ✅ Till 31 Jul, with booking · 📍 All outlets · 🔴 T&Cs apply, more info here · @kiasufoodies"
+      "blurb": "✅ $3++ dim sum on weekdays · ✅ $4++ dim sum on weekend · ✅ Till 31 Jul, with booking · 📍 All outlets · 🔴 T&Cs apply, more info here · @kiasufoodies",
+      "seenOn": 1
     },
     {
       "id": "tg-sgweekend-3713-get-healthier-hair-with-tk-trichokare-s-scalp-purifying",
@@ -3641,12 +3866,13 @@
       "code": null,
       "url": "https://t.me/sgweekend/3713",
       "cards": [],
-      "location": null,
+      "location": "NEX, Ngee Ann City, Velocity@Novena, Clement",
       "starts": "2026-07-08",
       "expires": "2026-08-31",
       "source": "tg-sgweekend",
       "added": "2026-07-08",
-      "blurb": "✨ Targets flaky, oily, itchy & inflamed scalps · ✨ Deeply cleanse clogged hair follicles & reset scalp pH balance · ✨ Promotes stronger hair growth · ✨ Receive a free Haircare Kit worth $45 after your"
+      "blurb": "✨ Targets flaky, oily, itchy & inflamed scalps · ✨ Deeply cleanse clogged hair follicles & reset scalp pH balance · ✨ Promotes stronger hair growth · ✨ Receive a free Haircare Kit worth $45 after your",
+      "seenOn": 1
     },
     {
       "id": "tg-sgweekend-3714-early-bird-promo-join-rws-cares-festival-s-steps-of-hop",
@@ -3657,12 +3883,13 @@
       "code": null,
       "url": "https://t.me/sgweekend/3714",
       "cards": [],
-      "location": null,
+      "location": "Resort World Sentosa",
       "starts": "2026-07-08",
       "expires": "2026-08-22",
       "source": "tg-sgweekend",
       "added": "2026-07-08",
-      "blurb": "✨ Redeem a free Adventure Cove Waterpark entry for every Walkathon ticket · ✨ Take a scenic 1.4KM walk through USS, Singapore Oceanarium & Adventure Cove Waterpark · ✨ Meet up to 14 beloved character "
+      "blurb": "✨ Redeem a free Adventure Cove Waterpark entry for every Walkathon ticket · ✨ Take a scenic 1.4KM walk through USS, Singapore Oceanarium & Adventure Cove Waterpark · ✨ Meet up to 14 beloved character ",
+      "seenOn": 1
     }
   ]
 }

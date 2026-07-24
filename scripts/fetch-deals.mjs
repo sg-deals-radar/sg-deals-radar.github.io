@@ -334,10 +334,27 @@ function dedupe(deals) {
   const fps = [];
   for (const d of ranked) {
     const fp = fingerprint(d.title);
-    if (fps.some((k, i) => kept[i].category === d.category && jaccard(k, fp) >= 0.55)) continue;
+    const dupIdx = fps.findIndex((k, i) => kept[i].category === d.category && jaccard(k, fp) >= 0.55);
+    if (dupIdx >= 0) {                              // same deal on another source → count it, keep richest
+      const k = kept[dupIdx];
+      (k._src = k._src || new Set([k.source])).add(d.source);
+      continue;
+    }
     kept.push(d); fps.push(fp);
   }
+  for (const k of kept) { k.seenOn = k._src ? k._src.size : 1; delete k._src; } // "trending" = seen on N sources
   return kept;
+}
+
+/** A specific outlet/area from a "📍 <place>" pin — only when the deal is
+ *  restricted to it. Generic locations (all outlets / islandwide / online)
+ *  return null because they apply everywhere. */
+function extractLocation(text) {
+  const m = text.match(/📍\s*([^·\n|]+)/);
+  if (!m) return null;
+  const loc = m[1].trim().replace(/\s+/g, " ");
+  if (/^(all outlets|all stores|island[\s-]?wide|all mall|nationwide|online|participating|selected outlets|various|multiple|available|in[\s-]?stores?|stores? only|s'?pore\b|singapore\b)/i.test(loc)) return null;
+  return loc.slice(0, 44);
 }
 function decodeEntities(s) {
   return s
@@ -390,7 +407,7 @@ async function fetchRss(feed, today) {
       code: extractCode(text),
       url: r.link,
       cards: extractCards(text, category),
-      location: null,
+      location: extractLocation(text),
       starts: extractStart(text, today) || added,
       expires,
       source: feed.source,
@@ -435,7 +452,7 @@ async function fetchDiveDeals(today) {
       code: extractCode(r.title),
       url: r.link,
       cards: extractCards(r.title, category),
-      location: null,
+      location: extractLocation(r.title),
       starts: extractStart(r.title, today) || added,
       expires,
       source: "divedeals",
@@ -482,7 +499,7 @@ async function fetchTelegram(cfg, today) {
       code: extractCode(text),
       url: linkM[1],
       cards: extractCards(text, category),
-      location: null,
+      location: extractLocation(text),
       starts: extractStart(text, today) || posted.toISOString().slice(0, 10),
       expires,
       source: `tg-${cfg.channel}`,
