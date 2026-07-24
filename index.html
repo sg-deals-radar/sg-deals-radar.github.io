@@ -42,6 +42,14 @@
   .refresh{background:none;border:1px solid var(--line);color:var(--muted);border-radius:50%;
     width:24px;height:24px;font-size:13px;cursor:pointer;vertical-align:middle;margin-left:4px;line-height:1;transition:.15s}
   .refresh:hover{color:var(--accent);border-color:var(--accent)}
+  .srcbtn{background:none;border:0;color:var(--muted);font:inherit;font-size:12px;cursor:pointer;text-decoration:underline dotted;padding:0}
+  .srcbtn:hover{color:var(--accent)}
+  .srcpanel{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 13px;margin:8px auto 0;max-width:440px;text-align:left}
+  .srcgroup{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}
+  .srcgroup:last-child{margin-bottom:0}
+  .srchead{width:100%;font-size:10.5px;text-transform:uppercase;letter-spacing:.5px;color:var(--muted);font-weight:700}
+  .srcitem{font-size:12px;background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:3px 9px;color:var(--ink)}
+  .srcitem b{color:var(--muted);font-weight:600}
   .refresh.spinning{animation:spin .8s linear infinite;pointer-events:none}
   @keyframes spin{to{transform:rotate(360deg)}}
 
@@ -166,6 +174,7 @@
     <div class="logo"><span class="dot"></span>SG Deals Radar</div>
     <p class="tag">Every promo, discount, freebie &amp; voucher in Singapore — one clean feed.</p>
     <p class="updated"><span id="updated"></span> <button class="refresh" id="refreshBtn" title="Refresh deals" aria-label="Refresh deals">↻</button></p>
+    <div class="srcpanel" id="srcpanel" hidden></div>
   </header>
 
   <div class="notice" id="notice" hidden>
@@ -234,6 +243,21 @@ const CATS = [
 // Banks/networks a user can own — order roughly by SG prevalence.
 const BANKS = ["DBS","POSB","OCBC","UOB","Citi","HSBC","Maybank","Standard Chartered","Amex","CIMB","Trust","Visa","Mastercard"];
 const CAT_COLOR = {dining:"var(--dining)",shopping:"var(--shopping)",activities:"var(--activities)",travel:"var(--travel)",finance:"var(--finance)",cards:"var(--cards)"};
+const SOURCE_NAMES = {singpromos:"SingPromos",moneydigest:"MoneyDigest",milelion:"MileLion",suitesmile:"Suitesmile",dailyvanity:"Daily Vanity",eatbook:"Eatbook",divedeals:"DiveDeals"};
+let SOURCES = {};
+function sourceLabel(k){ return k.startsWith("tg-") ? "@"+k.slice(3) : (SOURCE_NAMES[k]||k); }
+function toggleSourcePanel(){
+  const p = document.getElementById("srcpanel");
+  if(!p.hidden){ p.hidden = true; return; }
+  const active = Object.entries(SOURCES).filter(([,n])=>n>0).sort((a,b)=>b[1]-a[1]);
+  const web = active.filter(([k])=>!k.startsWith("tg-"));
+  const tg = active.filter(([k])=>k.startsWith("tg-"));
+  const li = (arr)=>arr.map(([k,n])=>`<span class="srcitem">${sourceLabel(k)} <b>${n}</b></span>`).join("");
+  p.innerHTML =
+    (web.length?`<div class="srcgroup"><span class="srchead">Websites &amp; blogs</span>${li(web)}</div>`:"")
+    +(tg.length?`<div class="srcgroup"><span class="srchead">Telegram channels</span>${li(tg)}</div>`:"");
+  p.hidden = false;
+}
 
 let DEALS = [];
 let state = { cat:"all", q:"", filters:new Set(), sort:"cat", showAll:new Set(),
@@ -259,10 +283,12 @@ async function load(){
     if(!r.ok) throw 0;
     const j = await r.json();
     DEALS = j.deals || [];
-    const nSrc = j.sources ? Object.values(j.sources).filter(n=>n>0).length : 0;
-    upd.textContent =
-      "Updated " + new Date(j.updated).toLocaleString("en-SG",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"})
-      + (nSrc ? ` · ${nSrc} sources` : "");
+    SOURCES = j.sources || {};
+    const nSrc = Object.values(SOURCES).filter(n=>n>0).length;
+    const when = new Date(j.updated).toLocaleString("en-SG",{day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"});
+    upd.innerHTML = "Updated " + when + (nSrc ? ` · <button class="srcbtn" id="srcbtn">${nSrc} sources ▾</button>` : "");
+    const sb = document.getElementById("srcbtn");
+    if(sb) sb.onclick = toggleSourcePanel;
   }catch(e){
     upd.textContent = "Couldn't load the deals feed — tap ↻ to retry";
   }
