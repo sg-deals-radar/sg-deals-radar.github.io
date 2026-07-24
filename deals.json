@@ -1,22 +1,22 @@
 {
-  "updated": "2026-07-24T01:03:20.243Z",
+  "updated": "2026-07-24T01:19:15.152Z",
   "sources": {
     "singpromos": 13,
-    "moneydigest": 5,
+    "moneydigest": 4,
     "milelion": 3,
-    "suitesmile": 8,
+    "suitesmile": 6,
     "dailyvanity": 0,
     "eatbook": 2,
-    "divedeals": 185,
-    "tg-sgfooddeals": 16,
-    "tg-sgdealsandfreebies": 18,
-    "tg-freebiessg": 20,
-    "tg-sgweekend": 13,
-    "tg-tastesoulsg": 19,
-    "tg-goodlobang": 20,
-    "tg-good2gosg": 19,
-    "tg-confirmgood": 16,
-    "tg-kiasufoodies": 20
+    "divedeals": 183,
+    "tg-sgfooddeals": 9,
+    "tg-sgdealsandfreebies": 16,
+    "tg-freebiessg": 5,
+    "tg-sgweekend": 6,
+    "tg-tastesoulsg": 14,
+    "tg-goodlobang": 8,
+    "tg-good2gosg": 12,
+    "tg-confirmgood": 14,
+    "tg-kiasufoodies": 8
   },
   "deals": [
     {
@@ -660,6 +660,22 @@
       "blurb": ""
     },
     {
+      "id": "divedeals-singtel-switch-to-sg-s-1-broadband-from-29-90-mth",
+      "title": "Switch to SG's #1 Broadband from $29.90/mth!",
+      "merchant": "Singtel",
+      "category": "activities",
+      "type": "promo",
+      "code": null,
+      "url": "https://divedeals.sg/deals/experience/Singtel-Switch-to-SGs-1-Broadband-from-2990mth!-1784818786_Singtel",
+      "cards": [],
+      "location": null,
+      "starts": "2026-07-25",
+      "expires": null,
+      "source": "divedeals",
+      "added": "2026-07-25",
+      "blurb": ""
+    },
+    {
       "id": "divedeals-eat-pizza-enjoy-a-korean-spicy-or-hawaiian-at-2-99",
       "title": "Enjoy a Korean Spicy or Hawaiian at $2.99",
       "merchant": "Eat Pizza",
@@ -1257,22 +1273,6 @@
       "blurb": ""
     },
     {
-      "id": "divedeals-mr-bean-buy-pearly-taro-soymilk-get-50-off-2nd-drink",
-      "title": "Buy Pearly Taro Soymilk Get 50% Off 2nd Drink",
-      "merchant": "Mr Bean",
-      "category": "dining",
-      "type": "discount",
-      "code": null,
-      "url": "https://divedeals.sg/deals/food/Mr-Bean-Buy-Pearly-Taro-Soymilk-Get-50-Off-2nd-Drink-1784777808_MrBean",
-      "cards": [],
-      "location": null,
-      "starts": "2026-07-23",
-      "expires": null,
-      "source": "divedeals",
-      "added": "2026-07-23",
-      "blurb": ""
-    },
-    {
       "id": "divedeals-og-singapore-enjoy-20-off-storewide",
       "title": "Enjoy 20% OFF Storewide*",
       "merchant": "OG Singapore",
@@ -1659,6 +1659,22 @@
       "source": "tg-confirmgood",
       "added": "2026-07-22",
       "blurb": "✈️ Read more: bit.ly/4wWB3bD · @confirmgood"
+    },
+    {
+      "id": "divedeals-samsung-exclusive-deals-new-phone-new-watch",
+      "title": "Exclusive Deals - new phone, new watch!",
+      "merchant": "Samsung",
+      "category": "shopping",
+      "type": "promo",
+      "code": null,
+      "url": "https://divedeals.sg/deals/shopping/Samsung-Exclusive-Deals---new-phone-new-watch!-1784819369_Samsung",
+      "cards": [],
+      "location": null,
+      "starts": "2026-07-22",
+      "expires": null,
+      "source": "divedeals",
+      "added": "2026-07-22",
+      "blurb": ""
     },
     {
       "id": "divedeals-breadtalk-grab-6-buns-for-just-10-80",
@@ -2568,22 +2584,6 @@
       "type": "promo",
       "code": null,
       "url": "https://divedeals.sg/deals/food/Watami-Japanese-Dining-Enjoy-Summer-Stamina-Special-for-just-22-1784520664_WatamiJapaneseDining",
-      "cards": [],
-      "location": null,
-      "starts": "2026-07-20",
-      "expires": null,
-      "source": "divedeals",
-      "added": "2026-07-20",
-      "blurb": ""
-    },
-    {
-      "id": "divedeals-4-fingers-crispy-chicken-enjoy-selected-combos-at-just-10",
-      "title": "Enjoy selected combos at just $10!",
-      "merchant": "4 Fingers Crispy Chicken",
-      "category": "dining",
-      "type": "promo",
-      "code": null,
-      "url": "https://divedeals.sg/deals/food/4-Fingers-Crispy-Chicken-Enjoy-selected-combos-at-just-10!-1784520191_4FingersCrispyChicken",
       "cards": [],
       "location": null,
       "starts": "2026-07-20",

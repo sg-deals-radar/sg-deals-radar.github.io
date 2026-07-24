@@ -369,6 +369,8 @@ async function fetchRss(feed, today) {
     const postedDate = r.date ? new Date(r.date) : today;
     const added = postedDate.toISOString().slice(0, 10);
     const category = resolveCategory(feed.category, text);
+    const expires = relativeExpiry(text, postedDate) || extractExpiry(text, today, postedDate);
+    if (expires && expires < today.toISOString().slice(0, 10)) continue; // skip already-expired
     out.push({
       id: `${feed.source}-${slug(r.title)}`,
       title: r.title.slice(0, 110),
@@ -380,7 +382,7 @@ async function fetchRss(feed, today) {
       cards: extractCards(text, category),
       location: null,
       starts: extractStart(text, today) || added,
-      expires: relativeExpiry(text, postedDate) || extractExpiry(text, today, postedDate),
+      expires,
       source: feed.source,
       added,
       blurb: r.desc.slice(0, 200),
@@ -412,6 +414,8 @@ async function fetchDiveDeals(today) {
     const urlCat = (r.link.match(/\/deals\/(\w+)\//) || [])[1];
     const added = posted.toISOString().slice(0, 10);
     const category = resolveCategory(DIVEDEALS_CATMAP[urlCat] || "infer", r.title);
+    const expires = relativeExpiry(r.title, posted) || extractExpiry(r.title, today, posted);
+    if (expires && expires < today.toISOString().slice(0, 10)) continue; // skip already-expired
     out.push({
       id: `divedeals-${slug(r.title)}`,
       title: (m ? m[2] : r.title).trim().slice(0, 110),
@@ -423,7 +427,7 @@ async function fetchDiveDeals(today) {
       cards: extractCards(r.title, category),
       location: null,
       starts: extractStart(r.title, today) || added,
-      expires: relativeExpiry(r.title, posted) || extractExpiry(r.title, today, posted),
+      expires,
       source: "divedeals",
       added,
       blurb: "",           // their description just repeats the title
@@ -457,6 +461,8 @@ async function fetchTelegram(cfg, today) {
     // skip ancient posts that linger in the preview
     if (today - posted > 45 * 864e5) continue;
     const category = resolveCategory(cfg.category, text);
+    const expires = relativeExpiry(text, posted) || extractExpiry(text, today, posted);
+    if (expires && expires < today.toISOString().slice(0, 10)) continue; // skip already-expired
     out.push({
       id: `tg-${cfg.channel}-${slug(linkM[1].split("/").pop() + "-" + title)}`,
       title: title.slice(0, 110),
@@ -468,7 +474,7 @@ async function fetchTelegram(cfg, today) {
       cards: extractCards(text, category),
       location: null,
       starts: extractStart(text, today) || posted.toISOString().slice(0, 10),
-      expires: relativeExpiry(text, posted) || extractExpiry(text, today, posted),
+      expires,
       source: `tg-${cfg.channel}`,
       added: posted.toISOString().slice(0, 10),
       blurb: lines.slice(1).join(" · ").slice(0, 200),
