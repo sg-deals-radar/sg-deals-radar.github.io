@@ -151,13 +151,30 @@ function toIso(day, monKey, year, today) {
   return d.toISOString().slice(0, 10);
 }
 
+/** Short-validity phrases anchored to the POST date, so "Today Only" on a deal
+ *  posted 3 days ago correctly expires 3 days ago (dropped on the next refresh).
+ *  `posted` is a Date. Returns YYYY-MM-DD or null. */
+function relativeExpiry(text, posted) {
+  const t = text.toLowerCase();
+  const addDays = (n) => new Date(posted.getTime() + n * 864e5).toISOString().slice(0, 10);
+  if (/\btoday(?:'s)?[\s-]+only\b|\bvalid (?:only )?today\b|\bonly (?:available )?today\b/.test(t)) return addDays(0);
+  if (/\btomorrow[\s-]+only\b/.test(t)) return addDays(1);
+  const m = t.match(/\b(\d{1,2})[\s-]days?[\s-]only\b/);           // "3-day only" / "2 days only"
+  if (m) { const n = Number(m[1]); if (n >= 1 && n <= 14) return addDays(n - 1); }
+  if (/\bthis weekend\b/.test(t)) return addDays((7 - posted.getUTCDay()) % 7); // → that Sunday
+  return null;
+}
+
 /** Pull an END date out of promo text. Confidence order:
  *  explicit "until/till/ends X" > ranges "7-9 Aug" > "this August" >
  *  bare FUTURE dates ("17 Aug 2026", "on 24 Jul") not preceded by a start-word.
  *  Returns YYYY-MM-DD or null. */
-function extractExpiry(text, today) {
+function extractExpiry(text, today, posted = today) {
   const t = text.toLowerCase().replace(/[–—]/g, "-");
   const todayIso = today.toISOString().slice(0, 10);
+  // bare dates count as a deadline only if on/after the post date (a deal can't
+  // expire before it's posted); earlier dates are references, not deadlines.
+  const floorIso = posted.toISOString().slice(0, 10);
   let m;
   // 1) explicit end markers (highest confidence — a past date here = genuinely expired)
   m = t.match(new RegExp(`(?:until|till|by|ends?(?:\\s+on)?|last\\s+day|valid\\s+(?:till|until|thru|through))\\s+(?:sun|mon|tue|wed|thu|fri|sat)?[a-z]*,?\\s*(\\d{1,2})(?:st|nd|rd|th)?\\s+${MONTH_RE}\\.?\\,?\\s*(\\d{4})?`));
@@ -184,13 +201,13 @@ function extractExpiry(text, today) {
   while ((mm = reDM.exec(t))) {
     if (START.test(t.slice(Math.max(0, mm.index - 18), mm.index))) continue;
     const iso = toIso(mm[1], mm[2], mm[3], today);
-    if (iso >= todayIso && (!best || iso > best)) best = iso;
+    if (iso >= floorIso && (!best || iso > best)) best = iso;
   }
   const reMD = new RegExp(`${MONTH_RE}\\.?\\s+(\\d{1,2})(?!\\d)(?:st|nd|rd|th)?\\,?\\s*(\\d{4})?`, "g");
   while ((mm = reMD.exec(t))) {
     if (START.test(t.slice(Math.max(0, mm.index - 18), mm.index))) continue;
     const iso = toIso(mm[2], mm[1], mm[3], today);
-    if (iso >= todayIso && (!best || iso > best)) best = iso;
+    if (iso >= floorIso && (!best || iso > best)) best = iso;
   }
   return best;
 }
@@ -349,7 +366,8 @@ async function fetchRss(feed, today) {
     const text = `${r.title} ${r.desc}`;
     if (isNoise(r.title, r.link)) continue;
     if (feed.dealsOnly && !looksLikeDeal(r.title)) continue;
-    const added = (r.date ? new Date(r.date) : today).toISOString().slice(0, 10);
+    const postedDate = r.date ? new Date(r.date) : today;
+    const added = postedDate.toISOString().slice(0, 10);
     const category = resolveCategory(feed.category, text);
     out.push({
       id: `${feed.source}-${slug(r.title)}`,
@@ -362,7 +380,7 @@ async function fetchRss(feed, today) {
       cards: extractCards(text, category),
       location: null,
       starts: extractStart(text, today) || added,
-      expires: extractExpiry(text, today),
+      expires: relativeExpiry(text, postedDate) || extractExpiry(text, today, postedDate),
       source: feed.source,
       added,
       blurb: r.desc.slice(0, 200),
@@ -405,7 +423,7 @@ async function fetchDiveDeals(today) {
       cards: extractCards(r.title, category),
       location: null,
       starts: extractStart(r.title, today) || added,
-      expires: extractExpiry(r.title, today),
+      expires: relativeExpiry(r.title, posted) || extractExpiry(r.title, today, posted),
       source: "divedeals",
       added,
       blurb: "",           // their description just repeats the title
@@ -450,7 +468,7 @@ async function fetchTelegram(cfg, today) {
       cards: extractCards(text, category),
       location: null,
       starts: extractStart(text, today) || posted.toISOString().slice(0, 10),
-      expires: extractExpiry(text, today),
+      expires: relativeExpiry(text, posted) || extractExpiry(text, today, posted),
       source: `tg-${cfg.channel}`,
       added: posted.toISOString().slice(0, 10),
       blurb: lines.slice(1).join(" · ").slice(0, 200),
