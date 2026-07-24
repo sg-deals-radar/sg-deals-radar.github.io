@@ -162,6 +162,16 @@ function relativeExpiry(text, posted) {
   const m = t.match(/\b(\d{1,2})[\s-]days?[\s-]only\b/);           // "3-day only" / "2 days only"
   if (m) { const n = Number(m[1]); if (n >= 1 && n <= 14) return addDays(n - 1); }
   if (/\bthis weekend\b/.test(t)) return addDays((7 - posted.getUTCDay()) % 7); // → that Sunday
+  // day-of-week deadline: "till Sunday", "ends this Fri", "valid until Sat".
+  // Only explicit end-markers — NOT bare "Sunday only" or "Fri to Sun", which
+  // usually mean recurring days (e.g. "Fri to Sun only" = every weekend, not a deadline).
+  const DOW = { sun: 0, mon: 1, tue: 2, wed: 3, thu: 4, fri: 5, sat: 6 };
+  const DAY = "(sunday|sun|monday|mon|tuesday|tues|tue|wednesday|weds|wed|thursday|thurs|thur|thu|friday|fri|saturday|sat)";
+  const dm = t.match(new RegExp(`\\b(?:until|till|til|ends?(?:\\s+on)?|by|this|valid\\s+(?:till|until)|last\\s+day(?:\\s+on)?)\\s+${DAY}\\b`));
+  if (dm) {
+    const target = DOW[dm[1].slice(0, 3)];
+    if (target !== undefined) return addDays((target - posted.getUTCDay() + 7) % 7);
+  }
   return null;
 }
 
