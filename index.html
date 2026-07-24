@@ -45,6 +45,14 @@
   .refresh.spinning{animation:spin .8s linear infinite;pointer-events:none}
   @keyframes spin{to{transform:rotate(360deg)}}
 
+  .notice{display:flex;gap:8px;align-items:flex-start;background:var(--card);border:1px solid var(--line);
+    border-radius:12px;padding:10px 12px;margin:6px 0 2px}
+  .notice-body{flex:1;font-size:12.5px;color:var(--muted);line-height:1.55;display:flex;flex-direction:column;gap:3px}
+  .notice-body b{color:var(--ink);font-weight:650}
+  .notice .legend{opacity:.9}
+  .noticeX{flex:none;background:none;border:0;color:var(--muted);font-size:14px;cursor:pointer;line-height:1;padding:2px 4px}
+  .noticeX:hover{color:var(--ink)}
+
   .search{position:sticky;top:0;z-index:20;padding:14px 0 10px;background:linear-gradient(var(--bg) 70%,transparent);margin-top:8px}
   .searchbox{display:flex;align-items:center;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:12px 16px}
   .searchbox input{flex:1;background:none;border:0;color:var(--ink);font-size:16px;outline:none}
@@ -159,6 +167,14 @@
     <p class="tag">Every promo, discount, freebie &amp; voucher in Singapore — one clean feed.</p>
     <p class="updated"><span id="updated"></span> <button class="refresh" id="refreshBtn" title="Refresh deals" aria-label="Refresh deals">↻</button></p>
   </header>
+
+  <div class="notice" id="notice" hidden>
+    <div class="notice-body">
+      <span>⚠️ Deals change fast — always <b>tap through and check the brand's own page</b> (via the deal link) before heading down.</span>
+      <span class="legend"><b>🔥</b> spotted on several channels · <b>📍</b> deal is only at that specific outlet</span>
+    </div>
+    <button class="noticeX" id="noticeX" aria-label="Dismiss">✕</button>
+  </div>
 
   <div class="search">
     <div class="searchbox">
@@ -494,6 +510,14 @@ document.getElementById("refreshBtn").addEventListener("click", async e=>{
   b.classList.add("spinning");
   await load();                      // re-pull the latest published deals.json
   setTimeout(()=>b.classList.remove("spinning"), 400);
+});
+
+// top notice — shown until dismissed (remembered)
+const notice = document.getElementById("notice");
+if(localStorage.getItem("sgdr_notice")!=="off") notice.hidden = false;
+document.getElementById("noticeX").addEventListener("click",()=>{
+  notice.hidden = true;
+  try{ localStorage.setItem("sgdr_notice","off"); }catch(e){}
 });
 
 load();
