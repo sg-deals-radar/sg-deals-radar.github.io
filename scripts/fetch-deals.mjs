@@ -297,6 +297,12 @@ function isNoise(title, url) {
   return false;
 }
 
+/** A "roundup" is one card that opens a curated list of many deals (e.g. MileLion's
+ *  weekly summary). Its title date-range is the coverage week, not the deals' validity. */
+function isRoundup(title) {
+  return /weekly deal summary|deal summary|\bround[- ]?up\b/i.test(title);
+}
+
 function slug(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60);
 }
@@ -396,7 +402,14 @@ async function fetchRss(feed, today) {
     const postedDate = r.date ? new Date(r.date) : today;
     const added = postedDate.toISOString().slice(0, 10);
     const category = resolveCategory(feed.category, text);
-    const expires = relativeExpiry(text, postedDate) || extractExpiry(text, today, postedDate);
+    let expires = relativeExpiry(text, postedDate) || extractExpiry(text, today, postedDate);
+    const roundup = isRoundup(r.title);
+    if (roundup) {
+      // A weekly roundup's title date-range is its coverage week, not the deals'
+      // validity — keep it up ~a week (a fresh issue lands weekly and replaces it).
+      const base = expires ? new Date(expires) : postedDate;
+      expires = new Date(base.getTime() + 7 * 864e5).toISOString().slice(0, 10);
+    }
     if (expires && expires < today.toISOString().slice(0, 10)) continue; // skip already-expired
     out.push({
       id: `${feed.source}-${slug(r.title)}`,
@@ -413,6 +426,7 @@ async function fetchRss(feed, today) {
       source: feed.source,
       added,
       blurb: r.desc.slice(0, 200),
+      roundup: roundup || undefined,
     });
   }
   return out;
@@ -554,7 +568,7 @@ async function main() {
 
   // tag roundup pages (one card that opens a list of many deals, e.g. MileLion's summary)
   for (const d of deals) {
-    if (/weekly deal summary|deal summary|\bround[- ]?up\b/i.test(d.title)) d.roundup = true;
+    if (isRoundup(d.title)) d.roundup = true;
   }
 
   deals.sort((a, b) => (b.added < a.added ? -1 : 1));
