@@ -552,6 +552,11 @@ async function main() {
     return anchor >= staleCut;
   }));
 
+  // tag roundup pages (one card that opens a list of many deals, e.g. MileLion's summary)
+  for (const d of deals) {
+    if (/weekly deal summary|deal summary|\bround[- ]?up\b/i.test(d.title)) d.roundup = true;
+  }
+
   deals.sort((a, b) => (b.added < a.added ? -1 : 1));
   const out = { updated: today.toISOString(), sources: tally, deals };
   await writeFile(OUT, JSON.stringify(out, null, 2) + "\n");

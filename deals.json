@@ -1,10 +1,10 @@
 {
-  "updated": "2026-07-24T01:44:14.541Z",
+  "updated": "2026-07-24T02:42:59.019Z",
   "sources": {
     "singpromos": 13,
     "moneydigest": 4,
     "milelion": 3,
-    "suitesmile": 6,
+    "suitesmile": 0,
     "dailyvanity": 0,
     "eatbook": 2,
     "divedeals": 183,
@@ -765,7 +765,8 @@
       "source": "milelion",
       "added": "2026-07-24",
       "blurb": "All the deals from the world of miles and points [18-24 Jul 26].",
-      "seenOn": 1
+      "seenOn": 1,
+      "roundup": true
     },
     {
       "id": "divedeals-papi-s-tacos-enjoy-all-shaken-margaritas-for-just-11",
@@ -969,25 +970,6 @@
       "source": "tg-goodlobang",
       "added": "2026-07-23",
       "blurb": "➡️ $10 Regular Poke Bowls (U.P. $14.90) · 📅 24 - 26 Jul · 📍 All outlets · 👉 More info: bit.ly/4fj5ItK · @goodlobang",
-      "seenOn": 1
-    },
-    {
-      "id": "suitesmile-scoot-dbs-promo-code-20-off-jul-2026",
-      "title": "Scoot DBS Promo Code: 20% Off (Jul 2026)",
-      "merchant": "Scoot DBS",
-      "category": "travel",
-      "type": "voucher",
-      "code": null,
-      "url": "https://suitesmile.com/blog/2026/07/23/scoot-dbs-promo-code-jul-2026/",
-      "cards": [
-        "DBS"
-      ],
-      "location": null,
-      "starts": "2026-07-23",
-      "expires": "2026-07-27",
-      "source": "suitesmile",
-      "added": "2026-07-23",
-      "blurb": "From 23 to 27 Jul 2026, get a 20% discount off Scoot fares with a DBS promo code. Travel from Aug 2026 to Jan 2027.",
       "seenOn": 1
     },
     {
@@ -1693,25 +1675,6 @@
       "seenOn": 1
     },
     {
-      "id": "suitesmile-travelgoogoo-visa-esim-promo-free-unlimited-data-in-thailand",
-      "title": "Travelgoogoo Visa eSIM Promo: Free Unlimited Data in Thailand",
-      "merchant": "Travelgoogoo Visa eSIM",
-      "category": "travel",
-      "type": "freebie",
-      "code": null,
-      "url": "https://suitesmile.com/blog/2026/07/22/travelgoogoo-visa-esim-promo-thailand-jul-2026/",
-      "cards": [
-        "Visa"
-      ],
-      "location": null,
-      "starts": "2026-07-22",
-      "expires": null,
-      "source": "suitesmile",
-      "added": "2026-07-22",
-      "blurb": "Visa cardholders can claim a free eSIM for 3 or 7 days of unlimited data in Thailand via Travelgoogoo.",
-      "seenOn": 1
-    },
-    {
       "id": "tg-tastesoulsg-4373-a-shiok-menu-featuring-kopi-siew-dai-kaya-toast-drinks-",
       "title": "A Shiok menu featuring Kopi Siew Dai, Kaya Toast drinks, and local-inspired pastries — Starbucks Singapore",
       "merchant": "A Shiok menu",
@@ -2049,42 +2012,6 @@
       "source": "tg-good2gosg",
       "added": "2026-07-21",
       "blurb": "➡️ Biggest free sports festival returns ft. 30+ coach-led sport trials · ➡️ Incl. lacrosse, golf, parkour, snowboarding & more · 📆 15 - 16 Aug · 🕣 9am - 7pm · 📍 230 Stadium Blvd · 👉 More info: bit",
-      "seenOn": 1
-    },
-    {
-      "id": "suitesmile-citi-prestige-singapore-airlines-promo-code-s-60-s-120-off-j",
-      "title": "Citi Prestige Singapore Airlines Promo Code: S$60-S$120 Off (Jul 2026)",
-      "merchant": "Citi Prestige",
-      "category": "travel",
-      "type": "voucher",
-      "code": null,
-      "url": "https://suitesmile.com/blog/2026/07/21/citi-prestige-singapore-airlines-promo-code-jul-2026/",
-      "cards": [
-        "Citi"
-      ],
-      "location": null,
-      "starts": "2026-07-21",
-      "expires": "2026-07-27",
-      "source": "suitesmile",
-      "added": "2026-07-21",
-      "blurb": "From 21 to 27 Jul 2026, pay with the Citi Prestige Card to get S$60-S$120 off Singapore Airlines flights, on up to 5 tickets per transaction (max. S$600).",
-      "seenOn": 1
-    },
-    {
-      "id": "suitesmile-cathay-pacific-promo-code-up-to-s-150-off-singapore-hong-kon",
-      "title": "Cathay Pacific Promo Code: Up to S$150 Off Singapore-Hong Kong Flights",
-      "merchant": "Cathay Pacific",
-      "category": "travel",
-      "type": "voucher",
-      "code": null,
-      "url": "https://suitesmile.com/blog/2026/07/21/cathay-pacific-promo-code-singapore-hong-kong-jul-2026/",
-      "cards": [],
-      "location": null,
-      "starts": "2026-07-20",
-      "expires": "2026-08-09",
-      "source": "suitesmile",
-      "added": "2026-07-21",
-      "blurb": "From 20 Jul to 9 Aug 2026, redeem a Cathay Pacific promo code for S$60 (solo) or S$150 (2+ pax) off roundtrip flights from Singapore to Hong Kong.",
       "seenOn": 1
     },
     {
@@ -2544,23 +2471,6 @@
       "source": "tg-confirmgood",
       "added": "2026-07-20",
       "blurb": "🍰 Save these deals for your next birthday celebration · 🍰 HoYo FEST 2026 Singapore is happening next week · 🍰 Plan your next Bangkok trip with these recommendations · 🍰 New 1-Minute Melt Tender St",
-      "seenOn": 1
-    },
-    {
-      "id": "suitesmile-trust-cashback-card-nerf-no-free-overseas-atm-withdrawals",
-      "title": "Trust Cashback Card Nerf: No Free Overseas ATM Withdrawals",
-      "merchant": "Trust Cashback Card Nerf",
-      "category": "travel",
-      "type": "freebie",
-      "code": null,
-      "url": "https://suitesmile.com/blog/2026/07/20/trust-cashback-card-nerf-no-free-overseas-atm-withdrawals/",
-      "cards": [],
-      "location": null,
-      "starts": "2026-07-20",
-      "expires": null,
-      "source": "suitesmile",
-      "added": "2026-07-20",
-      "blurb": "The Trust Cashback Card is no longer able to withdraw cash from the Trust savings account through overseas ATMs. Check out the best alternatives right now.",
       "seenOn": 1
     },
     {

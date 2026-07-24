@@ -133,6 +133,8 @@
   .mini.cardic{background:rgba(129,140,248,.16);color:#a5b4fc}
   .mini.locic{background:rgba(148,163,184,.16);color:#cbd5e1}
   .mini.trend{background:rgba(251,146,60,.18);color:#fdba74}
+  .mini.roundup{background:rgba(45,212,191,.16);color:var(--accent)}
+  .blurb b{color:var(--ink);font-weight:650}
   .pill.trend{background:rgba(251,146,60,.14);color:#fdba74;border-color:transparent}
   .title{font-size:15px;font-weight:700;margin:3px 0 0;letter-spacing:-.1px;line-height:1.35;
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
@@ -387,6 +389,7 @@ function card(d){
   const codeIc = d.code ? `<span class="mini codeic">🎟</span>` : "";
   const cardIc = (d.cards&&d.cards.length) ? `<span class="mini cardic">💳 ${d.cards.join("/")}</span>` : "";
   const locIc = d.location ? `<span class="mini locic">📍</span>` : "";
+  const roundup = d.roundup ? `<span class="mini roundup">🗂 Roundup</span>` : "";
   const codeBtn = d.code
     ? `<button class="btn code" data-copy="${d.code}">${d.code}</button>`
     : "";
@@ -396,7 +399,7 @@ function card(d){
         <div class="rowtop">
           <span class="cat">${d.category}</span>
           <span class="merchant">${d.merchant}</span>
-          ${free}${trend}${codeIc}${cardIc}${locIc}
+          ${roundup}${free}${trend}${codeIc}${cardIc}${locIc}
         </div>
         <div class="title">${d.title}</div>
       </div>
@@ -406,11 +409,11 @@ function card(d){
       </div>
     </button>
     <div class="detail">
-      ${d.blurb?`<div class="blurb">${d.blurb}</div>`:""}
+      ${d.roundup?`<div class="blurb">🗂 <b>This is a roundup</b> — tapping through opens a curated page with many deals inside.</div>`:(d.blurb?`<div class="blurb">${d.blurb}</div>`:"")}
       <div class="meta">${trendPill}${cardsPills}${loc}<span class="pill loc">via ${d.source}</span></div>
       <div class="actions">
         ${codeBtn}
-        <a class="btn go" href="${d.url}" target="_blank" rel="noopener">Get deal →</a>
+        <a class="btn go" href="${d.url}" target="_blank" rel="noopener">${d.roundup?"See all deals →":"Get deal →"}</a>
         <button class="btn shareBtn" data-share="${d.id}" title="Share this deal">↗</button>
       </div>
     </div>
