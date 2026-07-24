@@ -303,6 +303,14 @@ function isRoundup(title) {
   return /weekly deal summary|deal summary|\bround[- ]?up\b/i.test(title);
 }
 
+/** Recurring/ongoing offers ("every last Tuesday", "monthly") have no single end
+ *  date; and a far-off date in such deals is usually a travel/validity window, not
+ *  the offer deadline (e.g. HSBC×SIA: "every last Tuesday… travel until 31 May 2027"). */
+function isAmbiguousEndDate(text) {
+  return /\bevery\s+(?:(?:last|first|other|\d+(?:st|nd|rd|th)?)\s+)?(?:mon|tue|wed|thu|fri|sat|sun|month|week|payday|day)[a-z]*\b|\bmonthly\b/i.test(text)
+      || /\b(?:travel|fly|flying|stay|stays|check[- ]?out|check[- ]?in)\s+(?:until|till|by|period|dates?|to)\b|\bfor (?:travel|stays)\b|\bvalid for travel\b/i.test(text);
+}
+
 function slug(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 60);
 }
@@ -566,9 +574,17 @@ async function main() {
     return anchor >= staleCut;
   }));
 
-  // tag roundup pages (one card that opens a list of many deals, e.g. MileLion's summary)
+  const todayIso2 = today.toISOString().slice(0, 10);
   for (const d of deals) {
+    // tag roundup pages (one card that opens a list of many deals, e.g. MileLion's summary)
     if (isRoundup(d.title)) d.roundup = true;
+    // a far-off date on a recurring/travel deal is a validity window, not the offer
+    // end — drop it so the card shows an honest "Posted X · check link", not a wrong "Ends"
+    if (d.expires && d.expires > todayIso2 && !d.roundup
+        && (new Date(d.expires) - today) / 864e5 > 120
+        && isAmbiguousEndDate(d.title + " " + (d.blurb || ""))) {
+      d.expires = null;
+    }
   }
 
   deals.sort((a, b) => (b.added < a.added ? -1 : 1));

@@ -1,5 +1,5 @@
 {
-  "updated": "2026-07-24T03:16:40.465Z",
+  "updated": "2026-07-24T03:31:41.084Z",
   "sources": {
     "singpromos": 13,
     "moneydigest": 4,
@@ -12,7 +12,7 @@
     "tg-sgdealsandfreebies": 16,
     "tg-freebiessg": 5,
     "tg-sgweekend": 6,
-    "tg-tastesoulsg": 14,
+    "tg-tastesoulsg": 15,
     "tg-goodlobang": 8,
     "tg-good2gosg": 12,
     "tg-confirmgood": 14,
@@ -768,6 +768,23 @@
       "seenOn": 1
     },
     {
+      "id": "tg-good2gosg-2017-free-entry-to-first-ever-tanjong-pagar-distri-party",
+      "title": "Free Entry to First-Ever Tanjong Pagar Distri-Party 🖼️",
+      "merchant": "",
+      "category": "activities",
+      "type": "freebie",
+      "code": null,
+      "url": "https://t.me/good2gosg/2017",
+      "cards": [],
+      "location": "Tanjong Pagar Distripark",
+      "starts": "2026-07-24",
+      "expires": "2026-07-25",
+      "source": "tg-good2gosg",
+      "added": "2026-07-24",
+      "blurb": "➡️ Block-wide intervention & invention to bring art & community closer · ➡️ Ft. artist guided tours, artist performances, exhibitions, art carnivals & more · 📆 25 Jul · 🕣 12 - 7pm · 📍 Tanjong Pagar",
+      "seenOn": 1
+    },
+    {
       "id": "milelion-milelion-weekly-deal-summary-18-24-jul-26",
       "title": "MileLion Weekly Deal Summary [18-24 Jul 26]",
       "merchant": "MileLion Weekly",
@@ -783,6 +800,23 @@
       "added": "2026-07-24",
       "blurb": "All the deals from the world of miles and points [18-24 Jul 26].",
       "roundup": true,
+      "seenOn": 1
+    },
+    {
+      "id": "tg-tastesoulsg-4377-guzman-y-gomez",
+      "title": "Guzman y Gomez",
+      "merchant": "Guzman y Gomez",
+      "category": "dining",
+      "type": "promo",
+      "code": null,
+      "url": "https://t.me/tastesoulsg/4377",
+      "cards": [],
+      "location": null,
+      "starts": "2026-07-24",
+      "expires": null,
+      "source": "tg-tastesoulsg",
+      "added": "2026-07-24",
+      "blurb": "➡️ Popular Butter Chicken filling returns · 📆 Now - while stocks last · 📍 All outlets · 👉 More info: bit.ly/4fvn4Cp · @tastesoulsg",
       "seenOn": 1
     },
     {
@@ -1636,7 +1670,7 @@
       ],
       "location": null,
       "starts": "2026-07-22",
-      "expires": "2027-05-31",
+      "expires": null,
       "source": "tg-sgweekend",
       "added": "2026-07-22",
       "blurb": "✨ Enjoy up to S$120 on Singapore Airlines flights every last Tuesday of the month · ✨ Fly to Europe, Japan, Korea & other Singapore Airlines destinations (excluding Southeast Asia destinations) · ✨ Us",
@@ -3890,23 +3924,6 @@
       "source": "tg-sgweekend",
       "added": "2026-07-10",
       "blurb": "✨ Celebrate SG61 with this list of places perfect for catching the National Day fireworks · 📅 Previews: 11 Jul, 18 Jul, 25 Jul & 1 Aug · 📅 Actual Parade: 9 Aug · ⏰ First fireworks: 7.30PM · ⏰ Final ",
-      "seenOn": 1
-    },
-    {
-      "id": "tg-good2gosg-1997-hoyo-fest-2026-returns-with-stamp-rallies-merch-more",
-      "title": "HoYo FEST 2026 Returns With Stamp Rallies, Merch & More",
-      "merchant": "HoYo FEST",
-      "category": "activities",
-      "type": "freebie",
-      "code": null,
-      "url": "https://t.me/good2gosg/1997",
-      "cards": [],
-      "location": "Suntec Convention Centre, Hall 403",
-      "starts": "2026-07-31",
-      "expires": "2026-08-02",
-      "source": "tg-good2gosg",
-      "added": "2026-07-10",
-      "blurb": "➡️ Dedicated HoYoverse games convention returns ft. activity booths, exclusive merch, experience zones & more · ➡️ + FREE merch when you take part in stamp rally & booth activities · 📆 31 Jul - 2 Aug",
       "seenOn": 1
     },
     {
