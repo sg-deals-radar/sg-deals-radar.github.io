@@ -37,6 +37,7 @@ GitHub Actions (cron, daily)             index.html  (GitHub Pages)
 | Source | Type | Coverage |
 |---|---|---|
 | SingPromos | RSS | Broadest — dining, retail, banks, events |
+| EverydayOnSales | RSS (7-day intake window) | Atrium/warehouse/clearance sales + brand promos; titles carry validity dates |
 | MoneyDigest | RSS | General deals |
 | Milelion | RSS (deals-only filter) | Travel & credit cards |
 | Suitesmile | RSS (deals-only filter) | Travel |
