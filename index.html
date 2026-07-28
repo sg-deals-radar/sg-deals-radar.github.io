@@ -245,7 +245,7 @@ const CATS = [
 // Banks/networks a user can own — order roughly by SG prevalence.
 const BANKS = ["DBS","POSB","OCBC","UOB","Citi","HSBC","Maybank","Standard Chartered","Amex","CIMB","Trust","Visa","Mastercard"];
 const CAT_COLOR = {dining:"var(--dining)",shopping:"var(--shopping)",activities:"var(--activities)",travel:"var(--travel)",finance:"var(--finance)",cards:"var(--cards)"};
-const SOURCE_NAMES = {singpromos:"SingPromos",moneydigest:"MoneyDigest",milelion:"MileLion",suitesmile:"Suitesmile",dailyvanity:"Daily Vanity",eatbook:"Eatbook",divedeals:"DiveDeals"};
+const SOURCE_NAMES = {singpromos:"SingPromos",everydayonsales:"EverydayOnSales",moneydigest:"MoneyDigest",milelion:"MileLion",suitesmile:"Suitesmile",dailyvanity:"Daily Vanity",eatbook:"Eatbook",divedeals:"DiveDeals"};
 let SOURCES = {};
 function sourceLabel(k){ return k.startsWith("tg-") ? "@"+k.slice(3) : (SOURCE_NAMES[k]||k); }
 function toggleSourcePanel(){
@@ -308,7 +308,9 @@ function postedDaysAgo(d){ return d.added ? Math.floor((TODAY - new Date(d.added
 function buildTabs(){
   const counts = {all:DEALS.length, cards:DEALS.filter(d=>d.cards&&d.cards.length).length};
   DEALS.forEach(d=>counts[d.category]=(counts[d.category]||0)+1);
-  document.getElementById("tabs").innerHTML = CATS.map(c=>
+  document.getElementById("tabs").innerHTML = CATS
+    .filter(c=>(counts[c.k]||0)>0 || c.k===state.cat)  // hide empty categories (until they refill)
+    .map(c=>
     `<button class="tab ${c.k===state.cat?"on":""}" data-c="${c.k}">${c.icon} ${c.label}<span class="n">${counts[c.k]||0}</span></button>`
   ).join("");
 }

@@ -29,6 +29,9 @@ const UA = "sg-deals-radar/0.2 (+https://github.com/waffledolfi/sg-deals-radar)"
 //            editorial feeds like Eatbook); false → keep everything.
 const RSS_FEEDS = [
   { url: "https://www.singpromos.com/feed/",  source: "singpromos",  category: "infer",  type: "infer", dealsOnly: false },
+  // huge feed (~1.5k items incl. atrium/warehouse/clearance sales); titles start
+  // with the validity dates ("23-27 July 2026: …") — freshDays keeps intake sane.
+  { url: "https://sg.everydayonsales.com/feed/", source: "everydayonsales", category: "infer", type: "infer", dealsOnly: false, freshDays: 7 },
   { url: "https://www.moneydigest.sg/feed/",  source: "moneydigest", category: "infer",  type: "infer", dealsOnly: true  },
   { url: "https://milelion.com/feed/",        source: "milelion",    category: "travel", type: "infer", dealsOnly: true  },
   { url: "https://suitesmile.com/feed/",      source: "suitesmile",  category: "travel", type: "infer", dealsOnly: true  },
@@ -408,7 +411,13 @@ async function fetchRss(feed, today) {
     if (isNoise(r.title, r.link)) continue;
     if (feed.dealsOnly && !looksLikeDeal(r.title)) continue;
     const postedDate = r.date ? new Date(r.date) : today;
+    if (feed.freshDays && (today - postedDate) / 864e5 > feed.freshDays) continue;
     const added = postedDate.toISOString().slice(0, 10);
+    // titles like "23-27 July 2026: McDonald's …" — dates stay in `text` for the
+    // extractors, but strip the prefix for the display title / merchant guess
+    const displayTitle = r.title
+      .replace(/^(?:now till\s+)?\d{1,2}[^:]{0,40}?\d{4}(?:\s+onwards)?\s*:\s*/i, "")
+      .trim() || r.title;
     const category = resolveCategory(feed.category, text);
     let expires = relativeExpiry(text, postedDate) || extractExpiry(text, today, postedDate);
     const roundup = isRoundup(r.title);
@@ -421,8 +430,8 @@ async function fetchRss(feed, today) {
     if (expires && expires < today.toISOString().slice(0, 10)) continue; // skip already-expired
     out.push({
       id: `${feed.source}-${slug(r.title)}`,
-      title: r.title.slice(0, 110),
-      merchant: extractMerchant(r.title, feed.source),
+      title: displayTitle.slice(0, 110),
+      merchant: extractMerchant(displayTitle, feed.source),
       category,
       type: feed.type === "infer" ? inferType(text) : feed.type,
       code: extractCode(text),
